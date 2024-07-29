@@ -1,6 +1,14 @@
-import { Box, Button, Typography, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  Input,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import Home1 from "../assets/Home/Poatry (3).png";
 import communitycentric from "../assets/Home/Poatry (5).png";
+import Carousel from "../views/home/Carousel";
 
 const Home = () => {
   const isMobile = useMediaQuery("(max-width:767px)");
@@ -111,12 +119,14 @@ const Home = () => {
           Know How
         </Button>
       </Box>
+      <Carousel />
       <Box
         sx={{
           color: "#9cf5b8",
           fontSize: "3em",
+          padding: "10px",
           marginTop: "60px",
-          textAlign: { xs: "center", md: "left" },
+          textAlign: "center",
         }}
       >
         Community-Centric Consciousness
@@ -125,7 +135,7 @@ const Home = () => {
         sx={{
           display: "flex",
           height: "fit-content",
-          width: { md: "35%", xs: "100%" },
+          width: { md: "35%", xs: "90%" },
         }}
       >
         <img
@@ -292,12 +302,13 @@ const Home = () => {
           }}
         />
       </Box>
-      /////////////////////
+
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           marginTop: "50px",
+          padding: "20px",
           justifyContent: "center",
           textAlign: "center",
           gap: "85px",
@@ -313,103 +324,144 @@ const Home = () => {
       <Box
         sx={{
           marginTop: "50px",
+          display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center",
           textAlign: "center",
         }}
       >
         <Box sx={{ color: "#9cf5b8", fontSize: "2em" }}>
           Potential Impact in a year to reach
         </Box>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "50px",
+            padding: "20px",
+          }}
+        >
+          {[
+            {
+              imgSrc:
+                "https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/721309a4-01ee-48b2-9ca2-fef0f76cecdc.svg",
+              value: "3000+",
+              description: "Conscious Lifestyle Options to Choose from",
+            },
+            {
+              imgSrc:
+                "https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/b8ea3370-dc9a-44d6-bbf5-9d751b93820c.svg",
+              value: "300+",
+              description:
+                "Number of Partnerships with Organisations, businesses, and other stakeholders",
+            },
+            {
+              imgSrc:
+                "https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/964e2f97-b5cf-4b3a-8033-1b9e264d3dab.svg",
+              value: "1000+",
+              description: "Tree Plantations for being Carbon Neutral",
+            },
+            {
+              imgSrc:
+                "https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/ebea225c-9ec1-404a-8ebc-95b71cea9fab.svg",
+              value: "12,000+",
+              description:
+                "Kg of Plastic Waste Prevented from Polluting our Environment",
+            },
+          ].map((item, index) => (
+            <Grid
+              item
+              key={index}
+              xs={12}
+              sm={6}
+              md={4}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              <Box>
+                <img
+                  alt="impact"
+                  style={{ width: "100%", height: "200px" }}
+                  src={item.imgSrc}
+                />
+              </Box>
+              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+                {item.value}
+              </Box>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
+                {item.description}
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+      <Box
+        sx={{
+          marginTop: "40px",
+          // backgroundColor: "black",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: "30px",
+          padding: "20px",
+        }}
+      >
+        <Box
+          sx={{
+            color: "#9cf5b8",
+            fontSize: "2.5em",
+            marginTop: "60px",
+          }}
+        >
+          Join the Tribe - It's Free!
+        </Box>
+        <Box sx={{ color: "white", fontSize: "18px" }}>
+          Sign up for budget-friendly offers, trendy arrivals, fabulous events,
+          and outstanding workshops.
+        </Box>
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-between",
-            marginTop: "50px",
-            flexWrap: "wrap",
             gap: "20px",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "80px",
+            flexDirection: {
+              xs: "column",
+              md: "row",
+            },
           }}
         >
-          <Box
+          <Input
+            type="email"
+            placeholder="Enter your email"
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              width: { md: "23%", sm: "48%", xs: "100%" },
-              gap: "10px",
+              padding: "10px",
+              fontSize: "16px",
+              borderRadius: "5px",
+              width: { xs: "80%", md: "500px" },
+              border: "1px solid #9cf5b8",
+              outline: "none",
+              backgroundColor: "white",
+            }}
+          />
+          <Button
+            sx={{
+              backgroundColor: "rgb(68, 222, 125)",
+              color: "black",
+              width: { xs: "80%", sm: "100px", md: "auto" },
+              minWidth: { xs: "100px", md: "auto" },
+              padding: "10px",
             }}
           >
-            <Box>
-              <img
-                alt="first image"
-                style={{ width: "100%", height: "200px" }}
-                src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/721309a4-01ee-48b2-9ca2-fef0f76cecdc.svg"
-              />
-            </Box>
-            <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>3000+</Box>
-            <Box sx={{ color: "white", fontSize: "18px" }}>
-              Conscious Lifestyle Options to Choose from
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              width: { md: "23%", sm: "48%", xs: "100%" },
-              gap: "10px",
-            }}
-          >
-            <Box>
-              <img
-                alt="first image"
-                style={{ width: "100%", height: "200px" }}
-                src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/b8ea3370-dc9a-44d6-bbf5-9d751b93820c.svg"
-              />
-            </Box>
-            <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>300+</Box>
-            <Box sx={{ color: "white", fontSize: "18px" }}>
-              Number of Partnerships with Organisations, businesses, and other
-              stakeholders
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              width: { md: "23%", sm: "48%", xs: "100%" },
-              gap: "10px",
-            }}
-          >
-            <Box>
-              <img
-                alt="first image"
-                style={{ width: "100%", height: "200px" }}
-                src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/964e2f97-b5cf-4b3a-8033-1b9e264d3dab.svg"
-              />
-            </Box>
-            <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>1000+</Box>
-            <Box sx={{ color: "white", fontSize: "18px" }}>
-              Tree Plantations for being Carbon Neutral
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              width: { md: "23%", sm: "48%", xs: "100%" },
-              gap: "10px",
-            }}
-          >
-            <Box>
-              <img
-                alt="first image"
-                style={{ width: "100%", height: "200px" }}
-                src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/ebea225c-9ec1-404a-8ebc-95b71cea9fab.svg"
-              />
-            </Box>
-            <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>12,000+</Box>
-            <Box sx={{ color: "white", fontSize: "18px" }}>
-              Kg of Plastic Waste Prevented from Polluting our Environment
-            </Box>
-          </Box>
+            Join now
+          </Button>
         </Box>
       </Box>
     </Box>
