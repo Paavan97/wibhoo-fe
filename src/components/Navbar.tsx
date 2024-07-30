@@ -120,11 +120,11 @@ export default function Navbar() {
       name: "Home",
       path: "/",
     },
-    { name: "Shop", path: "/" },
-    { name: "Use", path: "/" },
-    { name: "Places", path: "/places" },
-    { name: "Communities", path: "/" },
-    { name: "Our Story", path: "/" },
+    { name: "Shop", path: "" },
+    { name: "Use", path: "" },
+    { name: "Places", path: "/places-spaces" },
+    { name: "Communities", path: "/communities" },
+    { name: "Our Story", path: "" },
   ];
 
   const subMenus: {
@@ -164,7 +164,7 @@ export default function Navbar() {
         "Access sustainable services designed to simplify your eco-friendly routines.",
     },
     Places: {
-      items: [{ name: "", path: "/places" }],
+      items: [{ name: "", path: "/places-spaces" }],
       description:
         "Discover products that prioritize sustainability and reduce environmental impact.",
     },
@@ -175,8 +175,8 @@ export default function Navbar() {
     },
     "Our Story": {
       items: [
-        { name: "Page 1", path: "/our-story/page1" },
-        { name: "Page 2", path: "/our-story/page2" },
+        { name: "What is Wibhoo", path: "/what-is-wibhoo" },
+        { name: "How We Onboard", path: "/how-we-onboard" },
       ],
       description: "Learn more about our journey and values.",
     },
@@ -394,7 +394,9 @@ export default function Navbar() {
                 {mainMenus.map((menu) => (
                   <ListItem
                     button
-                    key={menu.path}
+                    component={Link}
+                    to={menu.path}
+                    key={menu.name}
                     onClick={() => handleMenuItemClick(menu.name)}
                     sx={{
                       backgroundColor:
