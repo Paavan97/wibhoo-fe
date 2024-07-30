@@ -140,11 +140,14 @@ export default function Navbar() {
     },
     Shop: {
       items: [
-        { name: "Home & Living", path: "/shop/home-living" },
-        { name: "Fashion & Clothing", path: "/shop/fashion-clothing" },
-        { name: "Beauty & Care", path: "/shop/beauty-care" },
-        { name: "Eat & Drink", path: "/shop/eat-drink" },
-        { name: "Lifestyle Essentials", path: "/shop/lifestyle-essentials" },
+        { name: "Home & Living", path: "/products/home-living" },
+        { name: "Fashion & Clothing", path: "/products/fashion-clothing" },
+        { name: "Beauty & Care", path: "/products/beauty-care" },
+        { name: "Eat & Drink", path: "/products/eat-drink" },
+        {
+          name: "Lifestyle Essentials",
+          path: "/products/lifestyle-essentials",
+        },
       ],
       description:
         "Discover products that prioritize sustainability and reduce environmental impact.",

@@ -6,7 +6,6 @@ import {
   Box,
   Typography,
   Button,
-  useMediaQuery,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import one from "../../assets/Home/carosuel1.png";
@@ -36,7 +35,7 @@ const Wrapper = styled("div")({
   justifyContent: "center",
 });
 
-const Container = styled(Box)(({ theme }) => ({
+const Container = styled(Box)(() => ({
   height: "100%",
   display: "flex",
   flexDirection: "row", // Default to horizontal layout
@@ -47,7 +46,7 @@ const Container = styled(Box)(({ theme }) => ({
 const Card = styled(Box, {
   shouldForwardProp: (prop) =>
     prop !== "checked" && prop !== "image" && prop !== "bgColor",
-})<CardProps>(({ checked, image, bgColor, theme }) => ({
+})<CardProps>(({ checked, image, bgColor }) => ({
   width: checked ? "600px" : "80px",
   height: "600px",
   borderRadius: ".75rem",
@@ -64,7 +63,7 @@ const Card = styled(Box, {
   position: "relative",
 }));
 
-const Row = styled(Box)(({ theme }) => ({
+const Row = styled(Box)(() => ({
   color: "white",
   display: "flex",
   flexDirection: "row",
@@ -143,7 +142,6 @@ const descriptions = [
 
 const Carousel = () => {
   const [selected, setSelected] = React.useState("c1");
-  const isMobile = useMediaQuery("(max-width:767px)");
 
   return (
     <Wrapper>
@@ -182,7 +180,6 @@ const Carousel = () => {
                       sx={{
                         backgroundColor: "#111917",
                         borderRadius: "20px",
-                        flexDirection: isMobile ? "column" : "row",
                         marginBottom: "20px",
                         // marginTop: "0px",
                         padding: "10px",
