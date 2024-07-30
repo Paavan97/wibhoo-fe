@@ -1,0 +1,42 @@
+[
+    {
+      "text": "Wellbeing & Care",
+      "path": "wellbeing-care",
+      "description" :"Explore our Home & Garden Maintenance category for sustainable solutions to keep your living space beautiful and green. From organic pest control to eco-friendly landscaping services, discover ways to maintain your home and garden while prioritizing the planet."
+    },
+    {
+      "text": "Eco-Tourism",
+      "path": "eco-tourism",
+       "description" :"Embark on Sustainable Journeys with Eco-Tourism. Dive into our Eco-Tourism category to uncover eco-friendly travel destinations and responsible tour operators. From nature retreats to community-based tourism initiatives, experience unforgettable adventures while minimizing your ecological footprint and supporting local communities."
+    },
+    {
+      "text": "Waste Management",
+      "path": "waste-management",
+       "description" :"Dive into our Waste Management category to discover sustainable solutions for managing waste effectively. From recycling services to composting solutions, find eco-friendly ways to reduce your environmental footprint and contribute to a cleaner, greener future."
+    },
+    {
+      "text": "Home & Garden",
+      "path": "home-garden",
+       "description" :"Explore our Home & Garden Maintenance category for sustainable solutions to keep your living space beautiful and green. From organic pest control to eco-friendly landscaping services, discover ways to maintain your home and garden while prioritizing the planet."
+    },
+    {
+      "text": "Event Planning",
+      "path": "event-planning",
+       "description" :"Dive into Wibhoo's Event Planning category to discover sustainable solutions for your gatherings. Whether you're organizing a green wedding or a corporate event, find eco-friendly venues, zero-waste catering services, and event planners committed to reducing environmental impact while creating memorable experiences."
+    },
+    {
+      "text": "Building & Architecture",
+      "path": "building-architecture",
+       "description" :"Craft Sustainable Spaces with Building, Architecture & Interior Services. Explore our range of services dedicated to creating eco-conscious structures and interiors. From green building design to sustainable interior décor, discover innovative solutions that prioritize environmental responsibility and aesthetic excellence."
+    },
+    {
+      "text": "Transport & Logistic",
+      "path": "transport-logistic",
+       "description" :"Navigate Green Paths with Sustainable Transport. Explore our Transport & Logistics category to find eco-friendly commuting options and logistics services. From electric vehicles to bicycle rentals and carbon-neutral delivery services, discover sustainable solutions for your transportation needs, reducing emissions and contributing to a cleaner environment."
+    },
+    {
+      "text": "Green Energy & Audits",
+      "path": "green-energy-audits",
+       "description" :"Elevate Sustainability with Green Energy, Audits & Certification Services. Explore our offerings tailored to promoting renewable energy adoption and environmental compliance. From energy audits to eco-certifications, discover services that empower businesses and individuals to embrace clean energy and green practices."
+    }
+  ]

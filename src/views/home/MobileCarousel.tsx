@@ -29,7 +29,6 @@ interface TitleProps {
 
 const Wrapper = styled("div")({
   width: "90%",
-  height: "100vh",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

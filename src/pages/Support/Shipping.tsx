@@ -20,7 +20,7 @@ const Shipping = () => {
           top: 0,
           right: 0,
           opacity: 0.7,
-          width: isTablet ? "120%" : "70%", // Adjust the width as needed
+          width: isTablet ? "140%" : "70%", // Adjust the width as needed
           height: "auto", // Maintain aspect ratio
           zIndex: 1,
         }}
@@ -36,26 +36,26 @@ const Shipping = () => {
       >
         <Box
           sx={{
-            padding: !isTablet ? "50px 140px 50px 50px" : "7px",
-            textAlign: "justify",
+            padding: !isTablet ? "50px 140px 50px 50px" : "10px",
+            textAlign: isTablet ? "left" : "justify",
           }}
         >
           <Typography
-            variant="h4"
+            variant="h3"
             sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 3 }}
           >
             Shipping Policy
           </Typography>
           <br />
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Wibhoo is committed to excellence, and the full satisfaction of our
             customers.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Wibhoo proudly offers shipping services. Be assured we are doing
@@ -64,7 +64,7 @@ const Shipping = () => {
             times. https://www.wibhoo.shop also offers same day dispatch.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -75,7 +75,7 @@ const Shipping = () => {
             2. SHIPPING
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             All orders for our products are processed and shipped out in 4-10
@@ -86,7 +86,7 @@ const Shipping = () => {
             shipment of your order, we will contact you via email.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -96,12 +96,12 @@ const Shipping = () => {
           >
             3. WRONG ADDRESS DISCLAIMER
           </Typography>
-          <Typography variant="h6" sx={{ color: "white", lineHeight: 2 }}>
+          <Typography variant="body1" sx={{ color: "white", lineHeight: 2 }}>
             It is the responsibility of the customers to make sure that the
             shipping address entered is correct.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We do our best to speed up processing and shipping time, so there is
@@ -110,7 +110,7 @@ const Shipping = () => {
             incorrect shipping address.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -121,7 +121,7 @@ const Shipping = () => {
             4. UNDELIVERABLE ORDERS
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Orders that are returned to us as undeliverable because of incorrect
@@ -129,7 +129,7 @@ const Shipping = () => {
             determined by us.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -140,7 +140,7 @@ const Shipping = () => {
             5. LOST/STOLEN PACKAGES
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             https://www.wibhoo.shop is not responsible for lost or stolen
@@ -149,7 +149,7 @@ const Shipping = () => {
             report to the local authorities.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -160,7 +160,7 @@ const Shipping = () => {
             6. RETURN REQUEST DAYS
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             https://www.wibhoo.shop allows you to return its item (s) within a
@@ -168,7 +168,7 @@ const Shipping = () => {
             returned unopened and unused.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -179,7 +179,7 @@ const Shipping = () => {
             7. OUT OF STOCK ITEM PROCESS
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             https://www.wibhoo.shop has the following options in the event there
@@ -187,7 +187,7 @@ const Shipping = () => {
             all items to be in stock before dispatching.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -198,7 +198,7 @@ const Shipping = () => {
             8. IMPORT DUTY AND TAXES
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             When dealing with https://www.wibhoo.shop you have the following
@@ -207,7 +207,7 @@ const Shipping = () => {
             the amount in the price of the order.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -218,14 +218,14 @@ const Shipping = () => {
             9. ACCEPTANCE
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             By accessing our site and placing an order you have willingly
             accepted the Shippping of this Shipping Policy.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{
               marginBottom: 2,
               color: "white",
@@ -235,12 +235,12 @@ const Shipping = () => {
           >
             10. CONTACT INFORMATION
           </Typography>
-          <Typography variant="h6" sx={{ color: "white", lineHeight: 2 }}>
+          <Typography variant="body1" sx={{ color: "white", lineHeight: 2 }}>
             In the event you have any questions or comments please reach us via
             the following contacts:
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Email - care@wibhoo.shop
@@ -255,9 +255,9 @@ const Shipping = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
-              fontSize: "19px",
+              fontSize: "17px",
               marginTop: "30px",
             }}
           >

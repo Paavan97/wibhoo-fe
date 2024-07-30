@@ -1,0 +1,253 @@
+[
+    {
+      "path": "home-living",
+      "id": 1,
+      "name": "Home & Living",
+      "description": "Elevate Your Living Space with Sustainable Home Solutions. Explore eco-friendly furniture, organic bedding, energy-efficient appliances, eco-friendly decor, natural cleaning products, and sustainable kitchenware for a greener home.",
+      "products": [
+        {
+          "id": 101,
+          "name": "Comfortable Sofa",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A stylish and comfortable sofa for your living room.",
+          "price": 299.99
+        },
+        {
+          "id": 102,
+          "name": "Elegant Dining Table",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A beautiful dining table for family gatherings.",
+          "price": 399.99
+        },
+        {
+          "id": 103,
+          "name": "Cozy Throw Blanket",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A warm throw blanket for chilly evenings.",
+          "price": 39.99
+        },
+        {
+          "id": 104,
+          "name": "Decorative Wall Art",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Unique wall art to enhance your home decor.",
+          "price": 79.99
+        },
+        {
+          "id": 105,
+          "name": "Stylish Coffee Table",
+          "image":"https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A modern coffee table for your living space.",
+          "price": 199.99
+        },
+        {
+          "id": 106,
+          "name": "Comfortable Bed Mattress",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A high-quality mattress for a restful night's sleep.",
+          "price": 499.99
+        }
+      ]
+    },
+    {
+      "path": "fashion-clothing",
+      "id": 2,
+      "name": "Fashion & Clothing",
+      "description": "Revamp Your Wardrobe Sustainably. Discover a curated collection of eco-conscious fashion and clothing options. From organic cotton basics to stylish sustainable accessories, our fashion category offers trendy, cool, & environmentally friendly choices to elevate your style.",
+      "products": [
+        {
+          "id": 201,
+          "name": "Stylish Jacket",
+          "image":"https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A fashionable jacket for any season.",
+          "price": 89.99
+        },
+        {
+          "id": 202,
+          "name": "Casual T-Shirt",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A comfortable t-shirt for everyday wear.",
+          "price": 29.99
+        },
+        {
+          "id": 203,
+          "name": "Classic Jeans",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Timeless jeans that never go out of style.",
+          "price": 49.99
+        },
+        {
+          "id": 204,
+          "name": "Elegant Dress",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A chic dress perfect for special occasions.",
+          "price": 79.99
+        },
+        {
+          "id": 205,
+          "name": "Stylish Sneakers",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Comfortable sneakers for everyday use.",
+          "price": 69.99
+        },
+        {
+          "id": 206,
+          "name": "Fashionable Handbag",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A trendy handbag to complement your outfit.",
+          "price": 129.99
+        }
+      ]
+    },
+    {
+      "path": "beauty-care",
+      "id": 3,
+      "name": "Beauty & Care",
+      "description": "Pamper Yourself Naturally. Dive into our Beauty & Care category to discover a range of eco-friendly and cruelty-free skincare, haircare, and personal care products. From natural ingredients to sustainable packaging, indulge in self-care while supporting the planet's well-being.",
+      "products": [
+        {
+          "id": 301,
+          "name": "Moisturizing Cream",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A nourishing cream to keep your skin hydrated.",
+          "price": 49.99
+        },
+        {
+          "id": 302,
+          "name": "Natural Lip Balm",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A soothing lip balm for soft lips.",
+          "price": 9.99
+        },
+        {
+          "id": 303,
+          "name": "Refreshing Face Mask",
+          "image":"https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A revitalizing face mask for glowing skin.",
+          "price": 19.99
+        },
+        {
+          "id": 304,
+          "name": "Anti-Aging Serum",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A powerful serum to reduce fine lines.",
+          "price": 89.99
+        },
+        {
+          "id": 305,
+          "name": "Exfoliating Scrub",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "An effective scrub for smooth skin.",
+          "price": 24.99
+        },
+        {
+          "id": 306,
+          "name": "Fragrant Perfume",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A long-lasting perfume with a captivating scent.",
+          "price": 59.99
+        }
+      ]
+    },
+    {
+      "path": "eat-drink",
+      "id": 4,
+      "name": "Food & Eat",
+      "description": "Eat Sustainably, Live Vibrantly. Delve into our Food & Eating category for a diverse array of sustainable and ethically sourced culinary delights. From organic produce to artisanal snacks and eco-friendly kitchen essentials, explore options that nourish both your body and the planet.",
+      "products": [
+        {
+          "id": 401,
+          "name": "Gourmet Coffee",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Rich and aromatic coffee for coffee lovers.",
+          "price": 19.99
+        },
+        {
+          "id": 402,
+          "name": "Organic Tea",
+          "image":"https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A refreshing organic tea blend.",
+          "price": 14.99
+        },
+        {
+          "id": 403,
+          "name": "Artisan Chocolate",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Delicious handcrafted chocolates.",
+          "price": 34.99
+        },
+        {
+          "id": 404,
+          "name": "Healthy Snack Bars",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Nutritious snack bars for on-the-go.",
+          "price": 12.99
+        },
+        {
+          "id": 405,
+          "name": "Exotic Spices Set",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A collection of spices from around the world.",
+          "price": 25.99
+        },
+        {
+          "id": 406,
+          "name": "Gourmet Olive Oil",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "High-quality olive oil for your kitchen.",
+          "price": 34.99
+        }
+      ]
+    },
+    {
+      "path": "lifestyle-essentials",
+      "id": 5,
+      "name": "Other Essentials",
+      "description": "Essential Sustainability. Explore our collection of eco-friendly and essential items in the Other Essentials category. From household cleaning supplies to everyday lifestyle essentials, find products that prioritize sustainability without compromising on quality or convenience",
+      "products": [
+        {
+          "id": 501,
+          "name": "Fitness Tracker",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A smartwatch to keep track of your fitness.",
+          "price": 99.99
+        },
+        {
+          "id": 502,
+          "name": "Reusable Water Bottle",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "An eco-friendly water bottle for daily hydration.",
+          "price": 24.99
+        },
+        {
+          "id": 503,
+          "name": "Portable Phone Charger",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A compact charger for your devices.",
+          "price": 29.99
+        },
+        {
+          "id": 504,
+          "name": "Essential Oil Diffuser",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A diffuser to create a relaxing atmosphere.",
+          "price": 49.99
+        },
+        {
+          "id": 505,
+          "name": "Travel Backpack",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "A durable backpack for your adventures.",
+          "price": 79.99
+        },
+        {
+          "id": 506,
+          "name": "Smart LED Light Bulbs",
+          "image": "https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg",
+          "description": "Energy-efficient smart light bulbs.",
+          "price": 39.99
+        }
+      ]
+    }
+  ]
+  

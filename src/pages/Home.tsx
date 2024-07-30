@@ -10,6 +10,11 @@ import Home1 from "../assets/Home/Poatry (3).png";
 import communitycentric from "../assets/Home/Poatry (5).png";
 import Carousel from "../views/home/Carousel";
 import MobileCarousel from "../views/home/MobileCarousel";
+import Top1 from "../../public/images/Top1.png";
+import Bottom1 from "../../public/images/Bottom1.png";
+
+import Bottom from "../../public/images/Top.png";
+import Top from "../../public/images/bottom.png";
 
 const Home = () => {
   const isMobile = useMediaQuery("(max-width:767px)");
@@ -29,7 +34,7 @@ const Home = () => {
       <Box
         sx={{
           width: "100%",
-          height: "100vh",
+          height: "90vh",
           display: "flex",
           flexDirection: isMobile ? "column" : "none",
           justifyContent: "center", // Center horizontally
@@ -41,7 +46,7 @@ const Home = () => {
             backgroundImage: "url(/images/PaintBrush.png)",
             backgroundSize: isMobile ? "cover" : "contain",
             backgroundRepeat: "no-repeat",
-            padding: "10px",
+            padding: "4px",
             width: isMobile ? "390px" : "700px", // Ensure the box has a width
             height: isMobile ? "280px" : "480px",
             display: "flex",
@@ -144,95 +149,92 @@ const Home = () => {
         </Typography>
       </Box>
       {isCarousel ? <MobileCarousel /> : <Carousel />}
-
       <Box
         sx={{
-          color: "#9cf5b8",
-          fontSize: "3em",
-          padding: "10px",
-          marginTop: "100px",
-          textAlign: "center",
-        }}
-      >
-        Community-Centric Consciousness
-      </Box>
-      <Box
-        sx={{
+          marginTop: "70px",
+          width: "100%",
           display: "flex",
-          height: "fit-content",
-          width: { md: "35%", xs: "90%" },
+          justifyContent: "center",
         }}
       >
         <img
+          src={Top} // Replace with the actual image path
+          alt="Above Product Grid"
           style={{ width: "100%" }}
-          src={communitycentric}
-          alt="communityCentricimage"
         />
       </Box>
+
       <Box
         sx={{
-          position: "relative",
-          width: "100%",
           display: "flex",
-          flexDirection: "column",
           justifyContent: "center",
+          height: "auto",
           alignItems: "center",
+          backgroundColor: "#9cf5b8",
+          gap: "50px",
+          flexDirection: { md: "row", xs: "column" },
         }}
       >
         <Box
-          component="img"
-          src="/images/header.png"
-          alt="Top Image"
           sx={{
-            position: "absolute", // Absolute position for overlap
-            width: isTablet ? "90%" : "58%",
-            top: "0px",
-            zIndex: 1, // Lower z-index to be in the background
-          }}
-        />
-
-        <Box
-          sx={{
-            backgroundColor: "#9cf5b8",
-            borderRadius: "20px",
-            marginTop: isMobile ? "60px" : "90px",
-            marginBottom: isMobile ? "60px" : "90px",
-            width: isTablet ? "83%" : "55%",
-            height: isMobile ? "1200px" : "550px",
-            zIndex: 2,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            textAlign: "center",
+            marginTop: "30px",
+            height: "fit-content",
+            width: { md: "35%", xs: "100%" },
+          }}
+        >
+          <img
+            style={{ width: "90%", borderRadius: "20px" }}
+            src={communitycentric}
+            alt="communityCentricimage"
+          />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            width: { md: "45%", xs: "100%" },
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: { md: "start", xs: "center" },
+            height: "auto",
+            gap: "20px",
           }}
         >
           <Box
             sx={{
+              color: "#111917",
+              fontSize: "3em",
+              margin: "0px",
+              textAlign: { xs: "center", md: "left" },
+            }}
+          >
+            Community-Centric Consciousness
+          </Box>
+          <Box
+            sx={{
               display: "flex",
               width: "100%",
-              justifyContent: "center",
+              justifyContent: { xs: "center", md: "flex-start" },
               flexWrap: "wrap",
               gap: "20px",
-              textAlign: "center",
+              textAlign: { xs: "center", md: "start" },
             }}
           >
             <Box
               sx={{
-                height: "250px",
-                borderRadius: "20px",
-                width: { sm: "45%", xs: "80%" },
+                width: { sm: "45%", xs: "100%" },
                 gap: "10px",
                 display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+
                 flexDirection: "column",
-                backgroundColor: "#111917",
               }}
             >
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-location-dot"></i>
               </Box>
-              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+              <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Being Hyperlocal
               </Box>
               <Box sx={{ color: "white", fontSize: "18px" }}>
@@ -242,21 +244,16 @@ const Home = () => {
             </Box>
             <Box
               sx={{
-                height: "250px",
-                borderRadius: "20px",
-                width: { sm: "45%", xs: "80%" },
+                width: { sm: "45%", xs: "100%" },
                 gap: "10px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundColor: "#111917",
               }}
             >
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-handshake"></i>
               </Box>
-              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+              <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Collaborative Engagement
               </Box>
               <Box sx={{ color: "white", fontSize: "18px" }}>
@@ -266,21 +263,16 @@ const Home = () => {
             </Box>
             <Box
               sx={{
-                height: "250px",
-                borderRadius: "20px",
-                width: { sm: "45%", xs: "80%" },
+                width: { sm: "45%", xs: "100%" },
                 gap: "10px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundColor: "#111917",
               }}
             >
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-seedling"></i>
               </Box>
-              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+              <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Environmental Impact
               </Box>
               <Box sx={{ color: "white", fontSize: "18px" }}>
@@ -290,21 +282,16 @@ const Home = () => {
             </Box>
             <Box
               sx={{
-                height: "250px",
-                borderRadius: "20px",
-                width: { sm: "45%", xs: "80%" },
+                width: { sm: "45%", xs: "100%" },
                 gap: "10px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundColor: "#111917",
               }}
             >
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-infinity"></i>
               </Box>
-              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+              <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Holistic Well-being
               </Box>
               <Box sx={{ color: "white", fontSize: "18px" }}>
@@ -313,18 +300,41 @@ const Home = () => {
               </Box>
             </Box>
           </Box>
+          <Box
+            sx={{
+              marginTop: "50px",
+              display: "flex",
+              alignItems: "center",
+              gap: "20px",
+            }}
+          >
+            <Box
+              sx={{
+                color: "#9cf5b8",
+                fontSize: "20px",
+                fontWeight: "500",
+              }}
+            >
+              But How
+            </Box>
+            <Box sx={{ width: "40px", fontSize: "30px", color: "#9cf5b8" }}>
+              <i className="fa-solid fa-arrow-right"></i>
+            </Box>
+          </Box>
         </Box>
-        <Box
-          component="img"
-          src="/images/footer.png"
-          alt="Top Image"
-          sx={{
-            position: "absolute", // Absolute position for overlap
-            width: isTablet ? "90%" : "58%",
+      </Box>
 
-            bottom: "0px",
-            zIndex: 1, // Lower z-index to be in the background
-          }}
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={Bottom} // Replace with the actual image path
+          alt="Below Product Grid"
+          style={{ width: "100%" }}
         />
       </Box>
 
@@ -348,25 +358,47 @@ const Home = () => {
       </Box>
       <Box
         sx={{
-          marginTop: "100px",
+          marginTop: "50px",
+          width: "100%",
           display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={Top1} // Replace with the actual image path
+          alt="Above Product Grid"
+          style={{ width: "100%" }}
+        />
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          backgroundColor: "#FF5757",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
         }}
       >
-        <Box sx={{ color: "#9cf5b8", fontSize: "2em" }}>
+        <Box
+          sx={{
+            color: "#111917",
+            fontSize: "3em",
+            marginTop: "20px",
+          }}
+        >
           Potential Impact in a year to reach
         </Box>
+
         <Grid
           container
           spacing={2}
           sx={{
             justifyContent: "center",
             alignItems: "center",
-            marginTop: "50px",
             padding: "20px",
+            backgroundColor: "#FF5757",
+            marginTop: "30px",
             // gap: "1px",
           }}
         >
@@ -403,7 +435,7 @@ const Home = () => {
               key={index}
               xs={12}
               sm={6}
-              md={4}
+              md={3}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -426,6 +458,19 @@ const Home = () => {
             </Grid>
           ))}
         </Grid>
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={Bottom1} // Replace with the actual image path
+          alt="Below Product Grid"
+          style={{ width: "100%" }}
+        />
       </Box>
       <Box
         sx={{
