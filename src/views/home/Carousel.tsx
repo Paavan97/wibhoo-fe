@@ -17,6 +17,7 @@ interface CardProps {
   checked?: boolean;
   image: string;
   bgColor: string;
+  zIndex: number; // Added zIndex for layering effect
 }
 
 interface DescriptionProps {
@@ -38,22 +39,26 @@ const Wrapper = styled("div")({
 const Container = styled(Box)(() => ({
   height: "100%",
   display: "flex",
-  flexDirection: "row", // Default to horizontal layout
+  flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
+  position: "relative", // Changed to relative for proper layering
 }));
 
 const Card = styled(Box, {
   shouldForwardProp: (prop) =>
-    prop !== "checked" && prop !== "image" && prop !== "bgColor",
-})<CardProps>(({ checked, image, bgColor }) => ({
+    prop !== "checked" &&
+    prop !== "image" &&
+    prop !== "bgColor" &&
+    prop !== "zIndex",
+})<CardProps>(({ checked, image, bgColor, zIndex }) => ({
   width: checked ? "600px" : "80px",
   height: "600px",
   borderRadius: ".75rem",
   backgroundSize: "cover",
   cursor: "pointer",
   overflow: "hidden",
-  margin: "0 10px",
+  margin: "0 -10px", // Overlapping effect
   display: "flex",
   alignItems: "flex-end",
   transition: ".6s cubic-bezier(.28,-0.03,0,.99)",
@@ -61,6 +66,7 @@ const Card = styled(Box, {
   backgroundImage: checked ? `url(${image})` : "none",
   backgroundColor: checked ? "transparent" : bgColor,
   position: "relative",
+  zIndex, // Layering effect
 }));
 
 const Row = styled(Box)(() => ({
@@ -151,22 +157,17 @@ const Carousel = () => {
           onChange={(e) => setSelected(e.target.value)}
           row
         >
-          {descriptions.map((desc) => (
+          {descriptions.map((desc, index) => (
             <FormControlLabel
               key={desc.id}
               value={desc.id}
               control={<Radio sx={{ display: "none" }} />}
               label={
                 <Card
-                  sx={{
-                    display: "flex",
-
-                    justifyContent: "center",
-                    alignItems: "end",
-                  }}
                   image={desc.image}
                   checked={selected === desc.id}
                   bgColor={desc.bgColor}
+                  zIndex={index + 1} // Layering effect
                 >
                   <Title
                     checked={selected === desc.id}
@@ -180,8 +181,8 @@ const Carousel = () => {
                       sx={{
                         backgroundColor: "#111917",
                         borderRadius: "20px",
+                        marginLeft: "20px",
                         marginBottom: "20px",
-                        // marginTop: "0px",
                         padding: "10px",
                       }}
                     >

@@ -20,7 +20,7 @@ const Terms = () => {
           top: 0,
           right: 0,
           opacity: 0.7,
-          width: isTablet ? "120%" : "70%", // Adjust the width as needed
+          width: isTablet ? "140%" : "70%", // Adjust the width as needed
           height: "auto", // Maintain aspect ratio
           zIndex: 1,
         }}
@@ -36,19 +36,19 @@ const Terms = () => {
       >
         <Box
           sx={{
-            padding: !isTablet ? "50px 140px 50px 50px" : "7px",
-            textAlign: "justify",
+            padding: !isTablet ? "50px 140px 50px 50px" : "10px",
+            textAlign: isTablet ? "left" : "justify",
           }}
         >
           <Typography
-            variant="h4"
+            variant="h3"
             sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 3 }}
           >
             Terms Of Service
           </Typography>
           <br />
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Welcome to wibhoo! <br /> <br /> ​These terms and conditions outline
@@ -79,7 +79,7 @@ const Terms = () => {
             Cookies
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We employ the use of cookies. By accessing wibhoo, you agreed to use
@@ -97,7 +97,7 @@ const Terms = () => {
             License
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Unless otherwise stated, WIBHOO and/or its licensors own the
@@ -107,7 +107,7 @@ const Terms = () => {
             these terms and conditions.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             You Must Not:
@@ -116,7 +116,7 @@ const Terms = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
             }}
@@ -127,13 +127,13 @@ const Terms = () => {
             <li>Redistribute content from wibhoo</li>
           </ul>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             This Agreement shall begin on the date hereof.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Parts of this website offer an opportunity for users to post and
@@ -148,7 +148,7 @@ const Terms = () => {
             posting of and/or appearance of the Comments on this website.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             WIBHOO reserves the right to monitor all Comments and to remove any
@@ -156,7 +156,7 @@ const Terms = () => {
             breach of these Terms and Conditions.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             You warrant and represent that:
@@ -165,7 +165,7 @@ const Terms = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
             }}
@@ -190,7 +190,7 @@ const Terms = () => {
             </li>
           </ul>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             You hereby grant WIBHOO a non-exclusive license to use, reproduce,
@@ -204,7 +204,7 @@ const Terms = () => {
             Hyperlinking to our Content
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             The following organizations may link to our Website without prior
@@ -214,7 +214,7 @@ const Terms = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
             }}
@@ -234,7 +234,7 @@ const Terms = () => {
             </li>
           </ul>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             These organizations may link to our home page, to publications or to
@@ -244,7 +244,7 @@ const Terms = () => {
             (c) fits within the context of the linking party’s site.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We may consider and approve other link requests from the following
@@ -254,7 +254,7 @@ const Terms = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
             }}
@@ -270,7 +270,7 @@ const Terms = () => {
             <li>educational institutions and trade associations.</li>
           </ul>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We will approve link requests from these organizations if we decide
@@ -281,7 +281,7 @@ const Terms = () => {
             (d) the link is in the context of general resource information.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             These organizations may link to our home page so long as the link:
@@ -291,7 +291,7 @@ const Terms = () => {
             party’s site.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             If you are one of the organizations listed in paragraph 2 above and
@@ -303,7 +303,7 @@ const Terms = () => {
             to link. Wait 2-3 weeks for a response.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Approved organizations may hyperlink to our Website as follows:
@@ -312,7 +312,7 @@ const Terms = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
             }}
@@ -326,7 +326,7 @@ const Terms = () => {
             </li>
           </ul>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             No use of WIBHOO's logo or other artwork will be allowed for linking
@@ -339,7 +339,7 @@ const Terms = () => {
             iFrames
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Without prior approval and written permission, you may not create
@@ -353,7 +353,7 @@ const Terms = () => {
             Content Liability
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We shall not be hold responsible for any content that appears on
@@ -370,7 +370,7 @@ const Terms = () => {
             Your Privacy
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             Please read Privacy Policy
@@ -382,7 +382,7 @@ const Terms = () => {
             Reservation of Rights
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We reserve the right to request that you remove all links or any
@@ -399,7 +399,7 @@ const Terms = () => {
             Removal of links from our website
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             If you find any link on our Website that is offensive for any
@@ -408,7 +408,7 @@ const Terms = () => {
             or to respond to you directly.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             We do not ensure that the information on this website is correct, we
@@ -423,7 +423,7 @@ const Terms = () => {
             Disclaimer
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             To the maximum extent permitted by applicable law, we exclude all
@@ -434,7 +434,7 @@ const Terms = () => {
             style={{
               listStyle: "circle",
               color: "white",
-              textAlign: "justify",
+              textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
             }}
@@ -457,7 +457,7 @@ const Terms = () => {
             </li>
           </ul>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             The limitations and prohibitions of liability set in this Section
@@ -467,7 +467,7 @@ const Terms = () => {
             for breach of statutory duty.
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
           >
             As long as the website and the information and services on the
