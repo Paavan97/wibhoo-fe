@@ -1,12 +1,12 @@
-import { Box, Divider, Link } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import wibhooIcon from "../assets/dark 1.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Box sx={{ padding: "80px 30px" }}>
       <Divider
-        sx={{ height: "1px", backgroundColor: "#9cf5b8" }}
+        sx={{ height: "0.1px", backgroundColor: "#9cf5b8" }}
         variant="fullWidth"
       />
       <Box
@@ -112,6 +112,7 @@ const Footer = () => {
               }}
             >
               <Link
+                to={"/Product"}
                 style={{
                   fontSize: "14px",
 
@@ -123,8 +124,7 @@ const Footer = () => {
                 Products
               </Link>
               <Link
-                // to={"/service"}
-
+                to={"/service"}
                 style={{
                   fontSize: "14px",
 
@@ -135,7 +135,7 @@ const Footer = () => {
                 Services
               </Link>
               <Link
-                // to={"/places-spaces"}
+                to={"/places-spaces"}
                 style={{
                   fontSize: "14px",
 
@@ -146,7 +146,7 @@ const Footer = () => {
                 Places
               </Link>
               <Link
-                // to={"/communities"}
+                to={"/communities"}
                 style={{
                   fontSize: "14px",
 
@@ -171,7 +171,7 @@ const Footer = () => {
               }}
             >
               <Link
-                // to={"/what-is-wibhoo"}
+                to={"/what-is-wibhoo"}
                 style={{
                   fontSize: "14px",
                   color: "white",
@@ -181,7 +181,7 @@ const Footer = () => {
                 Our Story
               </Link>
               <Link
-                // to={"/how-we-onboard"}
+                to={"/how-we-onboard"}
                 style={{
                   fontSize: "14px",
 
@@ -302,13 +302,15 @@ const Footer = () => {
             cursor: "pointer",
           }}
         >
-          <Link sx={{ color: "white", fontSize: "20px" }}>
+          <Link to={"/terms"} style={{ color: "white", fontSize: "20px" }}>
             Terms of Service
           </Link>
-          <Link sx={{ color: "white", fontSize: "20px" }}>
+          <Link to={"/shipping"} style={{ color: "white", fontSize: "20px" }}>
             Shipping & Return
           </Link>
-          <Link sx={{ color: "white", fontSize: "20px" }}>Privacy</Link>
+          <Link to={"/privacy"} style={{ color: "white", fontSize: "20px" }}>
+            Privacy
+          </Link>
         </Box>
       </Box>
     </Box>

@@ -1,5 +1,7 @@
+import { Box } from "@mui/material";
+
 const ProductPage = () => {
-  return <div>Product page</div>;
+  return <Box sx={{ color: "white" }}>Product page</Box>;
 };
 
 export default ProductPage;

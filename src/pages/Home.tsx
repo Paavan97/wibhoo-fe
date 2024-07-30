@@ -41,7 +41,7 @@ const Home = () => {
             backgroundImage: "url(/images/PaintBrush.png)",
             backgroundSize: isMobile ? "cover" : "contain",
             backgroundRepeat: "no-repeat",
-            padding: "20px",
+            padding: "10px",
             width: isMobile ? "390px" : "700px", // Ensure the box has a width
             height: isMobile ? "280px" : "480px",
             display: "flex",
