@@ -6,7 +6,6 @@ import {
   Box,
   Typography,
   Button,
-  useMediaQuery,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import one from "../../assets/Home/carosuel1.png";
@@ -29,17 +28,20 @@ interface TitleProps {
 }
 
 const Wrapper = styled("div")({
-  width: "100%",
+  width: "90%",
   height: "100vh",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
 });
 
-const Container = styled(Box)(({ theme }) => ({
+const Container = styled(Box)(() => ({
   height: "100%",
+  width: "100%",
+  marginTop: "50px",
+  marginLeft: "20px",
   display: "flex",
-  flexDirection: "row", // Default to horizontal layout
+  flexDirection: "column", // Stack cards vertically
   justifyContent: "center",
   alignItems: "center",
 }));
@@ -47,14 +49,17 @@ const Container = styled(Box)(({ theme }) => ({
 const Card = styled(Box, {
   shouldForwardProp: (prop) =>
     prop !== "checked" && prop !== "image" && prop !== "bgColor",
-})<CardProps>(({ checked, image, bgColor, theme }) => ({
-  width: checked ? "600px" : "80px",
-  height: "600px",
+})<CardProps>(({ checked, image, bgColor }) => ({
+  width: "90%", // Full width for each card
+  height: checked ? "600px" : "50px", // Adjust height based on selection
   borderRadius: ".75rem",
+  padding: "10px",
   backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
   cursor: "pointer",
   overflow: "hidden",
-  margin: "0 10px",
+  // marginLeft: "20px",
+  margin: "15px ", // Margin for vertical spacing
   display: "flex",
   alignItems: "flex-end",
   transition: ".6s cubic-bezier(.28,-0.03,0,.99)",
@@ -64,24 +69,16 @@ const Card = styled(Box, {
   position: "relative",
 }));
 
-const Row = styled(Box)(({ theme }) => ({
-  color: "white",
-  display: "flex",
-  flexDirection: "row",
-}));
-
 const Description = styled(Box, {
   shouldForwardProp: (prop) => prop !== "checked",
 })<DescriptionProps>(({ checked }) => ({
   display: "flex",
-  justifyContent: "center",
   flexDirection: "column",
+  alignItems: "center",
   overflow: "hidden",
-  height: "150px",
-  width: "520px",
+  width: "100%",
   opacity: checked ? 1 : 0,
   transform: checked ? "translateY(0)" : "translateY(30px)",
-  transitionDelay: ".3s",
   transition: "all .3s ease",
 }));
 
@@ -89,15 +86,13 @@ const Title = styled(Typography, {
   shouldForwardProp: (prop) => prop !== "checked",
 })<TitleProps>(({ checked }) => ({
   position: "absolute",
-  top: "60%",
+  top: "20px",
   left: "50%",
-  transform: checked
-    ? "translate(-50%, -50%) rotate(0)"
-    : "translate(-50%, -50%) rotate(270deg)",
+  transform: checked ? "translate(-50%, 0)" : "translate(-50%, 0)",
   color: checked ? "transparent" : "#111917",
   fontWeight: "bold",
   textTransform: "uppercase",
-  textAlign: "left",
+  textAlign: "center", // Center align title
   width: "100%",
   whiteSpace: "nowrap", // Prevent text from wrapping
 }));
@@ -141,9 +136,8 @@ const descriptions = [
   },
 ];
 
-const Carousel = () => {
+const MobileCarousel = () => {
   const [selected, setSelected] = React.useState("c1");
-  const isMobile = useMediaQuery("(max-width:767px)");
 
   return (
     <Wrapper>
@@ -151,7 +145,7 @@ const Carousel = () => {
         <RadioGroup
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
-          row
+          aria-label="Carousel"
         >
           {descriptions.map((desc) => (
             <FormControlLabel
@@ -160,73 +154,58 @@ const Carousel = () => {
               control={<Radio sx={{ display: "none" }} />}
               label={
                 <Card
-                  sx={{
-                    display: "flex",
-
-                    justifyContent: "center",
-                    alignItems: "end",
-                  }}
                   image={desc.image}
                   checked={selected === desc.id}
                   bgColor={desc.bgColor}
                 >
-                  <Title
-                    checked={selected === desc.id}
-                    width="100%"
-                    fontSize="19px"
-                  >
+                  <Title checked={selected === desc.id} fontSize="19px">
                     {desc.title}
                   </Title>
-                  {selected === desc.id && (
-                    <Row
+
+                  <Description
+                    sx={{
+                      backgroundColor: "#111917",
+                      borderRadius: "20px",
+                      padding: "10px",
+                    }}
+                    checked={selected === desc.id}
+                  >
+                    <Typography
+                      variant="h5"
                       sx={{
-                        backgroundColor: "#111917",
-                        borderRadius: "20px",
-                        flexDirection: isMobile ? "column" : "row",
-                        marginBottom: "20px",
-                        // marginTop: "0px",
-                        padding: "10px",
+                        textTransform: "uppercase",
+                        textAlign: "center",
+                        color: "#9cf5b8",
                       }}
                     >
-                      <Description checked={selected === desc.id}>
-                        <Typography
-                          variant="h5"
-                          sx={{
-                            textTransform: "uppercase",
-                            textAlign: "center",
-                            color: "#9cf5b8",
-                          }}
-                        >
-                          {desc.title}
-                        </Typography>
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            paddingTop: "5px",
-                            textAlign: "center",
-                            color: "white",
-                          }}
-                        >
-                          {desc.text}
-                        </Typography>
-                        <Button
-                          variant="contained"
-                          color="primary"
-                          sx={{
-                            marginTop: "10px",
-                            alignSelf: "center",
-                            backgroundColor: "rgb(68, 222, 125)",
-                            color: "black",
-                            "&:hover": {
-                              backgroundColor: "white",
-                            },
-                          }}
-                        >
-                          {desc.bName}
-                        </Button>
-                      </Description>
-                    </Row>
-                  )}
+                      {desc.title}
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        paddingTop: "5px",
+                        textAlign: "center",
+                        color: "white",
+                      }}
+                    >
+                      {desc.text}
+                    </Typography>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      sx={{
+                        marginTop: "10px",
+                        alignSelf: "center",
+                        backgroundColor: "rgb(68, 222, 125)",
+                        color: "black",
+                        "&:hover": {
+                          backgroundColor: "white",
+                        },
+                      }}
+                    >
+                      {desc.bName}
+                    </Button>
+                  </Description>
                 </Card>
               }
             />
@@ -237,4 +216,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default MobileCarousel;

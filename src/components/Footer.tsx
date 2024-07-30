@@ -103,12 +103,19 @@ const Footer = () => {
             <Box sx={{ fontSize: "16px", fontWeight: "600", color: "white" }}>
               4 Pillars
             </Box>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: "13px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "13px",
+                cursor: "pointer",
+              }}
+            >
               <Link
                 style={{
-                  fontSize: "20px",
+                  fontSize: "14px",
 
-                  color: "gray",
+                  color: "white",
                 }}
                 className="FooterPagesHover"
                 // to={"/Product"}
@@ -155,7 +162,14 @@ const Footer = () => {
             <Box sx={{ fontSize: "18px", fontWeight: "600", color: "white" }}>
               About us
             </Box>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: "13px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "13px",
+                cursor: "pointer",
+              }}
+            >
               <Link
                 // to={"/what-is-wibhoo"}
                 style={{
@@ -285,13 +299,16 @@ const Footer = () => {
             gap: "15px",
             flexWrap: "wrap",
             flexDirection: { sm: "row", xs: "column" },
+            cursor: "pointer",
           }}
         >
-          <Link sx={{ color: "gray", fontSize: "20px" }}>Terms of Service</Link>
-          <Link sx={{ color: "gray", fontSize: "20px" }}>
+          <Link sx={{ color: "white", fontSize: "20px" }}>
+            Terms of Service
+          </Link>
+          <Link sx={{ color: "white", fontSize: "20px" }}>
             Shipping & Return
           </Link>
-          <Link sx={{ color: "gray", fontSize: "20px" }}>Privacy</Link>
+          <Link sx={{ color: "white", fontSize: "20px" }}>Privacy</Link>
         </Box>
       </Box>
     </Box>

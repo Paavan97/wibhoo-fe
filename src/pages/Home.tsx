@@ -9,10 +9,12 @@ import {
 import Home1 from "../assets/Home/Poatry (3).png";
 import communitycentric from "../assets/Home/Poatry (5).png";
 import Carousel from "../views/home/Carousel";
+import MobileCarousel from "../views/home/MobileCarousel";
 
 const Home = () => {
   const isMobile = useMediaQuery("(max-width:767px)");
   const isTablet = useMediaQuery("(max-width:900px)");
+  const isCarousel = useMediaQuery("(max-width:1000px)");
 
   return (
     <Box
@@ -27,6 +29,7 @@ const Home = () => {
       <Box
         sx={{
           width: "100%",
+          height: "100vh",
           display: "flex",
           flexDirection: isMobile ? "column" : "none",
           justifyContent: "center", // Center horizontally
@@ -38,6 +41,7 @@ const Home = () => {
             backgroundImage: "url(/images/PaintBrush.png)",
             backgroundSize: isMobile ? "cover" : "contain",
             backgroundRepeat: "no-repeat",
+            padding: "20px",
             width: isMobile ? "390px" : "700px", // Ensure the box has a width
             height: isMobile ? "280px" : "480px",
             display: "flex",
@@ -59,7 +63,7 @@ const Home = () => {
           </Box>
           <Typography
             sx={{
-              color: "white",
+              color: "#FF5757",
               fontSize: { xs: "1.2em", md: "2em" },
               margin: "0px",
               textAlign: { xs: "center", md: "left" },
@@ -119,13 +123,34 @@ const Home = () => {
           Know How
         </Button>
       </Box>
-      <Carousel />
+      <Box
+        sx={{
+          marginTop: "100px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: isMobile ? "90%" : "70%",
+          textAlign: "center",
+          gap: "20px",
+        }}
+      >
+        <Typography sx={{ color: "#9cf5b8", fontSize: "3em" }}>
+          Explore the ways
+        </Typography>
+        <Typography variant="h6" sx={{ color: "white" }}>
+          Explore Planet-Friendly Choices, Practical Services, Beautiful
+          Getaways, and Collaborative Networks
+        </Typography>
+      </Box>
+      {isCarousel ? <MobileCarousel /> : <Carousel />}
+
       <Box
         sx={{
           color: "#9cf5b8",
           fontSize: "3em",
           padding: "10px",
-          marginTop: "60px",
+          marginTop: "100px",
           textAlign: "center",
         }}
       >
@@ -323,7 +348,7 @@ const Home = () => {
       </Box>
       <Box
         sx={{
-          marginTop: "50px",
+          marginTop: "100px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -342,6 +367,7 @@ const Home = () => {
             alignItems: "center",
             marginTop: "50px",
             padding: "20px",
+            // gap: "1px",
           }}
         >
           {[
