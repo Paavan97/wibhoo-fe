@@ -54,7 +54,7 @@ const Service = () => {
             bottom: 0,
             left: 0,
             backgroundImage:
-              'url("../../../public/Cards/RedSplashTop.png"),url("../../../public/Cards/GreenSplashBottom.png")',
+              'url("../../../public/images/RedSplashTop.png"),url("../../../public/images/GreenSplashBottom.png")',
             backgroundRepeat: "no-repeat,no-repeat",
             backgroundPosition: "top right, bottom left",
             opacity: 0.7,
