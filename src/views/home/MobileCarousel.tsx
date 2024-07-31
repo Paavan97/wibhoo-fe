@@ -49,16 +49,15 @@ const Card = styled(Box, {
   shouldForwardProp: (prop) =>
     prop !== "checked" && prop !== "image" && prop !== "bgColor",
 })<CardProps>(({ checked, image, bgColor }) => ({
-  width: "90%", // Full width for each card
+  width: "100%", // Full width for each card
   height: checked ? "600px" : "50px", // Adjust height based on selection
   borderRadius: ".75rem",
   padding: "10px",
-  backgroundSize: "cover",
+  backgroundSize: "345px 650px",
   backgroundRepeat: "no-repeat",
   cursor: "pointer",
   overflow: "hidden",
-  // marginLeft: "20px",
-  margin: "15px ", // Margin for vertical spacing
+  margin: "15px 0", // Margin for vertical spacing
   display: "flex",
   alignItems: "flex-end",
   transition: ".6s cubic-bezier(.28,-0.03,0,.99)",
@@ -66,6 +65,7 @@ const Card = styled(Box, {
   backgroundImage: checked ? `url(${image})` : "none",
   backgroundColor: checked ? "transparent" : bgColor,
   position: "relative",
+  zIndex: 1, // Bring selected card to front
 }));
 
 const Description = styled(Box, {
@@ -146,7 +146,7 @@ const MobileCarousel = () => {
           onChange={(e) => setSelected(e.target.value)}
           aria-label="Carousel"
         >
-          {descriptions.map((desc) => (
+          {descriptions.map((desc, index) => (
             <FormControlLabel
               key={desc.id}
               value={desc.id}
@@ -156,6 +156,9 @@ const MobileCarousel = () => {
                   image={desc.image}
                   checked={selected === desc.id}
                   bgColor={desc.bgColor}
+                  style={{
+                    marginTop: index !== 0 ? "-27px" : "0", // Overlap cards slightly
+                  }}
                 >
                   <Title checked={selected === desc.id} fontSize="19px">
                     {desc.title}

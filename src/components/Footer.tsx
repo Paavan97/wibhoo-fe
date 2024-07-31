@@ -11,9 +11,6 @@ const Footer = () => {
       />
       <Box
         sx={{
-          // marginTop: "60px",
-          // backgroundColor: "black",
-          // padding: "80px 30px",
           marginTop: "60px",
           display: "flex",
           justifyContent: "space-around",
@@ -36,59 +33,6 @@ const Footer = () => {
               style={{ height: "70px" }}
             />
           </Box>
-          {/* <Box sx={{ fontSize: "16px", color: "white", maxWidth: "500px" }}>
-            Wibhoo is your hub for sustainable living. Discover eco-friendly
-            products, empowering services, and vibrant communities, all in one
-            place. Join us in shaping a greener future, effortlessly.
-          </Box> */}
-          {/* <Box
-            sx={{
-              fontSize: "20px",
-              color: "gray",
-              display: "flex",
-              gap: "6px",
-            }}
-          >
-            <Box
-              sx={{
-                border: "1px solid white",
-                padding: "10px",
-                height: "15px",
-                width: "15px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <i className="fa-brands fa-facebook-f" />
-            </Box>
-            <Box
-              sx={{
-                border: "1px solid white",
-                padding: "10px",
-                height: "15px",
-                width: "15px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <i className="fa-brands fa-x-twitter" />
-            </Box>
-            <Box
-              sx={{
-                border: "1px solid white",
-                padding: "10px",
-                height: "15px",
-                width: "15px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <i className="fa-brands fa-instagram" />
-            </Box>
-          </Box> */}
         </Box>
         <Box
           sx={{
@@ -115,11 +59,9 @@ const Footer = () => {
                 to={"/Product"}
                 style={{
                   fontSize: "14px",
-
                   color: "white",
                 }}
                 className="FooterPagesHover"
-                // to={"/Product"}
               >
                 Products
               </Link>
@@ -127,7 +69,6 @@ const Footer = () => {
                 to={"/service"}
                 style={{
                   fontSize: "14px",
-
                   color: "white",
                 }}
                 className="FooterPagesHover"
@@ -138,7 +79,6 @@ const Footer = () => {
                 to={"/places-spaces"}
                 style={{
                   fontSize: "14px",
-
                   color: "white",
                 }}
                 className="FooterPagesHover"
@@ -149,7 +89,6 @@ const Footer = () => {
                 to={"/communities"}
                 style={{
                   fontSize: "14px",
-
                   color: "white",
                 }}
                 className="FooterPagesHover"
@@ -184,7 +123,6 @@ const Footer = () => {
                 to={"/how-we-onboard"}
                 style={{
                   fontSize: "14px",
-
                   color: "white",
                 }}
                 className="FooterPagesHover"
@@ -193,48 +131,6 @@ const Footer = () => {
               </Link>
             </Box>
           </Box>
-          {/* <Box style={{ gap: "15px", display: "flex", flexDirection: "column" }}>
-          <Box style={{ fontSize: "18px", fontWeight: "600", color: "white" }}>
-            Support
-          </Box>
-          <Box
-            style={{ display: "flex", flexDirection: "column", gap: "13px" }}
-          >
-            <Link
-              // to={"/terms"}
-              style={{
-                fontSize: "14px",
-
-                color: "white",
-              }}
-              className="FooterPagesHover"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              // to={"/shipping"}
-              style={{
-                fontSize: "14px",
-
-                color: "white",
-              }}
-              className="FooterPagesHover"
-            >
-              Shipping & Return
-            </Link>
-            <Link
-              // to={"/privacy"}
-              style={{
-                fontSize: "14px",
-
-                color: "white",
-              }}
-              className="FooterPagesHover"
-            >
-              Privacy
-            </Link>
-          </Box>
-        </Box> */}
         </Box>
       </Box>
       <Box sx={{ marginTop: "80px" }}>
@@ -257,8 +153,6 @@ const Footer = () => {
           <Box sx={{ display: "flex", gap: "20px" }}>
             <Box
               sx={{
-                // height: "55px",
-                // width: "55px",
                 display: "flex",
                 alignItems: "center",
                 color: "white",
@@ -269,8 +163,6 @@ const Footer = () => {
             </Box>
             <Box
               sx={{
-                // height: "55px",
-                // width: "55px",
                 display: "flex",
                 alignItems: "center",
                 color: "white",
@@ -281,8 +173,6 @@ const Footer = () => {
             </Box>
             <Box
               sx={{
-                // height: "55px",
-                // width: "55px",
                 display: "flex",
                 alignItems: "center",
                 color: "white",
@@ -302,13 +192,25 @@ const Footer = () => {
             cursor: "pointer",
           }}
         >
-          <Link to={"/terms"} style={{ color: "white", fontSize: "20px" }}>
+          <Link
+            to={"/terms"}
+            style={{ color: "white", fontSize: "20px" }}
+            className="FooterPagesHover"
+          >
             Terms of Service
           </Link>
-          <Link to={"/shipping"} style={{ color: "white", fontSize: "20px" }}>
+          <Link
+            to={"/shipping"}
+            style={{ color: "white", fontSize: "20px" }}
+            className="FooterPagesHover"
+          >
             Shipping & Return
           </Link>
-          <Link to={"/privacy"} style={{ color: "white", fontSize: "20px" }}>
+          <Link
+            to={"/privacy"}
+            style={{ color: "white", fontSize: "20px" }}
+            className="FooterPagesHover"
+          >
             Privacy
           </Link>
         </Box>

@@ -29,6 +29,9 @@ const Places = () => {
     return () => clearInterval(interval);
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const categories = ["Art", "Food", "Other", "Studio"];
 
   const poster = [
@@ -103,7 +106,7 @@ const Places = () => {
           <Box
             sx={{
               color: "#111917",
-              fontSize: { md: "3.5em", xs: "1.8em" },
+              fontSize: { md: "3em", xs: "1.8em" },
               margin: "0px",
               maxWidth: { md: "70%", xs: "95%" },
               marginTop: { md: "-30px", xs: "0px" },
@@ -115,10 +118,11 @@ const Places = () => {
           <Typography
             sx={{
               color: "#FF5757",
-              fontSize: { xs: "1.2em", md: "2em" },
+              fontSize: { xs: "1em", md: "1.2em" },
               margin: "0px",
+
               maxWidth: { md: "70%", xs: "85%" },
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", md: "center" },
             }}
           >
             Explore sustainable destinations and artistic venues that inspire
@@ -129,7 +133,7 @@ const Places = () => {
               backgroundColor: "rgb(68, 222, 125)",
               textDecoration: "none",
               color: "black",
-              fontSize: isMobile ? "15px" : "20px",
+              fontSize: isMobile ? "10px" : "20px",
               fontWeight: "600",
               borderRadius: "10px",
               padding: "8px 16px",

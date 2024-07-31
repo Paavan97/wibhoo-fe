@@ -13,8 +13,12 @@ import ServiceCategories from "../../views/ProductsFooter/SeviceCategories";
 import Bottom from "/images/Top.png";
 import Platform from "../../assets/FooterServices/shine .png";
 import Top from "/images/bottom.png";
+import { useEffect } from "react";
 
 const Service = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: faHandHoldingHeart,
@@ -99,7 +103,7 @@ const Service = () => {
               <Box
                 sx={{
                   color: "#9cf5b8",
-                  fontSize: { md: "3em", xs: "4em" },
+                  fontSize: { md: "3em", xs: "2.7em" },
                   margin: "0px",
                   textAlign: { xs: "center", md: "left" },
                 }}
@@ -173,7 +177,7 @@ const Service = () => {
           height: "auto",
           alignItems: "center",
           backgroundColor: "#9cf5b8",
-          gap: "50px",
+          gap: { md: "50px", xs: "0px" },
           flexDirection: { md: "row", xs: "column" },
         }}
       >
@@ -252,16 +256,16 @@ const Service = () => {
                 planet and a happier community.
                 <br />
                 <br />
-                <DoneIcon sx={{ color: "rgb(68, 222, 125)" }} />
+                <DoneIcon sx={{ color: "#111917" }} />
                 Community-Centric
                 <br />
-                <DoneIcon sx={{ color: "rgb(68, 222, 125)" }} />
+                <DoneIcon sx={{ color: "#111917" }} />
                 Curated Variety
                 <br />
-                <DoneIcon sx={{ color: "rgb(68, 222, 125)" }} />
+                <DoneIcon sx={{ color: "#111917" }} />
                 Seamless Experience
                 <br />
-                <DoneIcon sx={{ color: "rgb(68, 222, 125)" }} />
+                <DoneIcon sx={{ color: "#111917" }} />
                 Impactful Connections
                 <br />
               </Typography>

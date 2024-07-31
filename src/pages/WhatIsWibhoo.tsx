@@ -18,6 +18,7 @@ import Top from "/images/bottom.png";
 import Bottom from "/images/Top.png";
 import Top1 from "/images/Top1.png";
 import Bottom1 from "/images/Bottom1.png";
+import { useEffect } from "react";
 
 const WhatIsWibhoo = () => {
   const images = [
@@ -30,6 +31,9 @@ const WhatIsWibhoo = () => {
     { id: 7, src: image7, title: "Image 7" },
     { id: 8, src: image8, title: "Image 8" },
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
