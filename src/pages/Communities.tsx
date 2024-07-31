@@ -303,7 +303,7 @@ const Communities = () => {
             backgroundColor: "#FF5757",
           }}
         >
-          <Box sx={{ fontSize: "2.5em", color: "#9cf5b8" }}>
+          <Box sx={{ fontSize: "2.5em", color: "#111917" }}>
             Projection for a Better Community
           </Box>
           <Box sx={{ fontSize: "16px", color: "white" }}>

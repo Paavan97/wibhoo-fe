@@ -7,6 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import Top from "../../public/images/bottom.png";
 import Bottom from "../../public/images/Top.png";
+import Banner from "../assets/HowWeOnBoard/Poatry (1).png";
 
 const HowWeOnBoard = () => {
   const theme = useTheme();
@@ -14,11 +15,18 @@ const HowWeOnBoard = () => {
 
   return (
     <Box sx={{ marginTop: "40px" }}>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
+          padding: "0px 20px",
+        }}
+      >
         <Box sx={{ color: "#9cf5b8", fontSize: "2em" }}>
           What do we see before onboarding
         </Box>
-        <Box sx={{ color: "white", fontSize: "18px" }}>
+        <Box sx={{ color: "white", fontSize: "18px", lineHeight: "2" }}>
           Before onboarding any options, Wibhoo conducts a rigorous vetting
           process to ensure authenticity and alignment with our values. We
           analyze multiple data points and verify claims to validate their
@@ -33,7 +41,7 @@ const HowWeOnBoard = () => {
           confidence in their choices.
         </Box>
       </Box>
-      <Box>
+      <Box sx={{ marginTop: "70px" }}>
         <Box
           sx={{
             // marginTop: "70px",
@@ -55,19 +63,21 @@ const HowWeOnBoard = () => {
             alignItems: "center",
             background: "#9cf5b8",
             flexDirection: { md: "row", xs: "column-reverse" },
+            padding: "20px",
           }}
         >
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
+              justifyContent: "center",
               height: "fit-content",
               width: { md: "45%", xs: "100%" },
             }}
           >
             <img
-              style={{ width: "90%" }}
-              src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/4555e2ad-543d-41c7-bdf0-33e03f202015.png"
+              style={{ width: "90%", borderRadius: "20px" }}
+              src={Banner}
               alt="bannerimage"
             />
           </Box>
@@ -83,14 +93,14 @@ const HowWeOnBoard = () => {
             }}
           >
             <Box sx={{ display: "flex", gap: "40px" }}>
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#  " }}>
                 <i className="fa-solid fa-check-double"></i>
               </Box>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
               >
                 <Box
-                  sx={{ fontSize: "20px", fontWeight: "600", color: "white" }}
+                  sx={{ fontSize: "22px", fontWeight: "700", color: "#111917" }}
                 >
                   Certification Verification
                 </Box>
@@ -101,14 +111,14 @@ const HowWeOnBoard = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", gap: "40px" }}>
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-glasses"></i>
               </Box>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
               >
                 <Box
-                  sx={{ fontSize: "20px", fontWeight: "600", color: "white" }}
+                  sx={{ fontSize: "22px", fontWeight: "700", color: "#111917" }}
                 >
                   Supply Chain Transparency
                 </Box>
@@ -119,14 +129,14 @@ const HowWeOnBoard = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", gap: "40px" }}>
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-seedling"></i>
               </Box>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
               >
                 <Box
-                  sx={{ fontSize: "20px", fontWeight: "600", color: "white" }}
+                  sx={{ fontSize: "22px", fontWeight: "700", color: "#111917" }}
                 >
                   Environmental Impact Assessment
                 </Box>
@@ -138,14 +148,14 @@ const HowWeOnBoard = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", gap: "40px" }}>
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-hand-holding-heart"></i>
               </Box>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
               >
                 <Box
-                  sx={{ fontSize: "20px", fontWeight: "600", color: "white" }}
+                  sx={{ fontSize: "22px", fontWeight: "700", color: "#111917" }}
                 >
                   Social Responsibility Initiatives
                 </Box>
@@ -157,14 +167,14 @@ const HowWeOnBoard = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", gap: "40px" }}>
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-star"></i>
               </Box>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
               >
                 <Box
-                  sx={{ fontSize: "20px", fontWeight: "600", color: "white" }}
+                  sx={{ fontSize: "22px", fontWeight: "700", color: "#111917" }}
                 >
                   Product or Service Quality
                 </Box>
@@ -176,14 +186,14 @@ const HowWeOnBoard = () => {
               </Box>
             </Box>
             <Box sx={{ display: "flex", gap: "40px" }}>
-              <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+              <Box sx={{ fontSize: "40px", color: "#111917" }}>
                 <i className="fa-solid fa-ear-listen"></i>
               </Box>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
               >
                 <Box
-                  sx={{ fontSize: "20px", fontWeight: "600", color: "white" }}
+                  sx={{ fontSize: "22px", fontWeight: "700", color: "#111917" }}
                 >
                   Customer Feedback and Reviews
                 </Box>
