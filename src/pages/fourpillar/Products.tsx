@@ -11,8 +11,12 @@ import {
   faMapMarkerAlt,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const Products = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const words = ["Eco-Friendly", "Organic", "Upcycled"];
   const features = [
     {

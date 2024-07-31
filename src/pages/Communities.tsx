@@ -3,8 +3,12 @@ import Bottom from "/images/Top.png";
 import Top1 from "/images/Top1.png";
 import Bottom1 from "/images/Bottom1.png";
 import MainBanner from "../assets/Communities/Poatry (2).png";
+import { useEffect } from "react";
 
 const Communities = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Box
       sx={{

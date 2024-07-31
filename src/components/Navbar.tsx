@@ -6,32 +6,38 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import NotificationsIcon from "@mui/icons-material/Notifications";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
-import { Grid, useMediaQuery } from "@mui/material";
+import { Backdrop, Dialog, Grid, Slide, useMediaQuery } from "@mui/material";
 import { Link, useLocation } from "react-router-dom"; // Import Link from react-router-dom for routing
 import wibhooIcon from "../assets/dark 1.png";
+
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  color: "inherit",
+  "& .MuiInputBase-input": {
+    padding: theme.spacing(1, 1, 1, 0),
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    transition: theme.transitions.create("width"),
+    width: "100%",
+    [theme.breakpoints.up("md")]: {
+      width: "20ch",
+    },
+  },
+}));
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
+  backgroundColor: theme.palette.common.white,
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: "100%",
+  width: "90%",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
@@ -48,54 +54,15 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   justifyContent: "center",
 }));
 
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
-}));
+const SlideTransition = (props: any) => {
+  return <Slide direction="down" {...props} />;
+};
 
 export default function Navbar() {
-  const location = useLocation();
   const isMobile = useMediaQuery("(max-width:767px)");
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
-    React.useState<null | HTMLElement>(null);
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const [selectedMenu, setSelectedMenu] = React.useState<string>("");
   const [showSubMenu, setShowSubMenu] = React.useState<boolean>(false);
-
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  React.useEffect(() => {
-    const currentPath = location.pathname;
-    const activeMenu =
-      Object.keys(subMenus).find((menu) =>
-        subMenus[menu].items.some((item) => item.path === currentPath)
-      ) || "Home";
-    setSelectedMenu(activeMenu);
-    setShowSubMenu(!!activeMenu && currentPath !== "/");
-  }, [location.pathname]);
-
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -186,78 +153,48 @@ export default function Navbar() {
   };
 
   const menuId = "primary-search-account-menu";
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
 
-  const mobileMenuId = "primary-search-account-menu-mobile";
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <ShoppingCartIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
-    </Menu>
-  );
+  const location = useLocation();
+  const [activeMenu, setActiveMenu] = React.useState("");
+  const [activeSubMenu, setActiveSubMenu] = React.useState("");
+  const [open, setOpen] = React.useState(false);
+
+  const handleSearchClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  React.useEffect(() => {
+    const path = location.pathname;
+
+    // Find the active main menu
+    const activeMain = mainMenus.find(
+      (menu) => menu.path && path.startsWith(menu.path)
+    );
+    if (activeMain) {
+      setActiveMenu(activeMain.name);
+
+      // Find the active submenu if it exists
+      if (subMenus[activeMain.name]) {
+        const activeSub = subMenus[activeMain.name].items.find((item) =>
+          path.startsWith(item.path)
+        );
+        if (activeSub) {
+          setActiveSubMenu(activeSub.path);
+        } else {
+          setActiveSubMenu("");
+        }
+      } else {
+        setActiveSubMenu("");
+      }
+    } else {
+      setActiveMenu("");
+      setActiveSubMenu("");
+    }
+  }, [location]);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -266,11 +203,11 @@ export default function Navbar() {
           <Box>
             <img src={wibhooIcon} alt="wibhooicon" style={{ height: "70px" }} />
           </Box>
-          <Search>
+          <Search onClick={handleSearchClick}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
-            <StyledInputBase
+            <InputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
@@ -311,8 +248,82 @@ export default function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
+
+      <Dialog
+        sx={{
+          backgroundColor: "#fff",
+          height: "50%",
+          // backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backdropFilter: "blur(4px)",
+        }}
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={SlideTransition}
+        BackdropComponent={Backdrop}
+        // BackdropProps={{
+        //   style: {
+        //     backgroundColor: "rgba(0, 0, 0, 0.5)",
+        //     backdropFilter: "blur(4px)",
+        //   },
+        // }}
+        PaperProps={{
+          style: {
+            width: "50%",
+            margin: "auto",
+            // top: "25%",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            backgroundColor: "#fff",
+            padding: 2,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
+        </Box>
+      </Dialog>
+
+      {/* <Dialog
+        fullScreen
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={SlideTransition}
+      >
+        <Box
+          sx={{
+            backgroundColor: "#fff",
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 2,
+          }}
+        >
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
+        </Box>
+      </Dialog> */}
+
       <Drawer
         anchor="right"
         open={drawerOpen}
@@ -359,6 +370,10 @@ export default function Navbar() {
                           color: "white", // White text color on hover
                         },
                       }}
+                      onClick={() => {
+                        setDrawerOpen(false);
+                        setShowSubMenu(false);
+                      }}
                     >
                       <ListItemText primary={item.name} />
                     </ListItem>
@@ -366,42 +381,90 @@ export default function Navbar() {
                 </List>
               </Box>
             ) : (
-              <List>
-                {mainMenus.map((menu) => (
-                  <ListItem
-                    button
-                    component={Link}
-                    to={menu.path}
-                    key={menu.name}
-                    onClick={() => handleMenuItemClick(menu.name)}
+              <>
+                <List>
+                  <Box
                     sx={{
-                      backgroundColor:
-                        selectedMenu === menu.name ? "#9cf5b8" : "inherit",
-                      color: selectedMenu === menu.name ? "black" : "inherit",
-                      "&:hover": {
-                        backgroundColor: "#9cf5b8",
-                        color: "black",
-                      },
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
                     }}
                   >
-                    <ListItemText primary={menu.name} />
-                  </ListItem>
-                ))}
-              </List>
+                    <img
+                      src={wibhooIcon}
+                      alt="wibhooicon"
+                      style={{ height: "70px" }}
+                    />
+                  </Box>
+                  {mainMenus.map((menu) => (
+                    <ListItem
+                      button
+                      component={menu.path ? Link : "div"}
+                      to={menu.path || undefined}
+                      key={menu.name}
+                      onClick={() => {
+                        if (subMenus[menu.name]) {
+                          handleMenuItemClick(menu.name);
+                          if (menu.path) {
+                            setDrawerOpen(false);
+                          }
+                        }
+                      }}
+                      sx={{
+                        textAlign: "center",
+                        marginTop: "20px",
+                        backgroundColor:
+                          selectedMenu === menu.name ? "#9cf5b8" : "inherit",
+                        color: selectedMenu === menu.name ? "black" : "inherit",
+                        "&:hover": {
+                          backgroundColor: "#9cf5b8",
+                          color: "black",
+                        },
+                      }}
+                    >
+                      <ListItemText primary={menu.name} />
+                    </ListItem>
+                  ))}
+                </List>
+              </>
             )}
           </Box>
         ) : (
           <Grid container sx={{ height: "100%" }}>
             <Grid item xs={6} sx={{ backgroundColor: "#111917" }}>
-              <List>
+              <List sx={{ textAlign: "center" }}>
+                <Box
+                  sx={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={wibhooIcon}
+                    alt="wibhooicon"
+                    style={{ height: "70px" }}
+                  />
+                </Box>
                 {mainMenus.map((menu) => (
                   <ListItem
                     button
-                    component={Link}
-                    to={menu.path}
+                    component={menu.path ? Link : "div"}
+                    to={menu.path || undefined}
                     key={menu.name}
-                    onClick={() => handleMenuItemClick(menu.name)}
+                    onClick={() => {
+                      if (subMenus[menu.name]) {
+                        handleMenuItemClick(menu.name);
+                        if (menu.path) {
+                          setDrawerOpen(false);
+                        }
+                      }
+                    }}
                     sx={{
+                      textAlign: "center",
+                      marginTop: "20px",
                       backgroundColor:
                         selectedMenu === menu.name ? "#9cf5b8" : "inherit",
                       color: selectedMenu === menu.name ? "black" : "inherit",
@@ -419,7 +482,7 @@ export default function Navbar() {
             <Grid item xs={6} sx={{ backgroundColor: "#9cf5b8", p: 2 }}>
               {selectedMenu && (
                 <>
-                  <Typography variant="body2" sx={{ mt: 2, color: "black" }}>
+                  <Typography variant="body2" sx={{ mt: 8, color: "black" }}>
                     {subMenus[selectedMenu]?.description}
                   </Typography>
                   <List>
@@ -429,6 +492,10 @@ export default function Navbar() {
                         key={item.path}
                         component={Link}
                         to={item.path}
+                        onClick={() => {
+                          setDrawerOpen(false);
+                          setShowSubMenu(false);
+                        }}
                         sx={{
                           color: "black",
                           "&:hover": {

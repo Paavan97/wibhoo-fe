@@ -8,8 +8,12 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import Top from "/images/bottom.png";
 import Bottom from "/images/Top.png";
 import Banner from "../assets/HowWeOnBoard/Poatry (1).png";
+import { useEffect } from "react";
 
 const HowWeOnBoard = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 

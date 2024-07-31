@@ -1,7 +1,11 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import splash from "/images/footerBackSplash.png";
+import { useEffect } from "react";
 
 const Privacy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const isTablet = useMediaQuery("(max-width:1113px)");
   return (
     <Box
