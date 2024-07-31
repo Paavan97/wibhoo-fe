@@ -77,7 +77,7 @@ const ServiceCategories = () => {
             height: 600,
             margin: 2,
             position: "relative",
-            backgroundImage: 'url("../../../public/images/card2.png")', // replace with your static image URL
+            backgroundImage: 'url("../../../public/Cards/redCard.png")', // replace with your static image URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
