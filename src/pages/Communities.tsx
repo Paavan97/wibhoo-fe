@@ -1,7 +1,7 @@
-import { Box, Divider, InputBase } from "@mui/material";
-import Bottom from "../../public/images/Top.png";
-import Top1 from "../../public/images/Top1.png";
-import Bottom1 from "../../public/images/Bottom1.png";
+import { Box, InputBase } from "@mui/material";
+import Bottom from "/images/Top.png";
+import Top1 from "/images/Top1.png";
+import Bottom1 from "/images/Bottom1.png";
 import MainBanner from "../assets/Communities/Poatry (2).png";
 
 const Communities = () => {

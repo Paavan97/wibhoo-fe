@@ -13,8 +13,8 @@ import Postercrousel2 from "../assets/Places/2.png";
 import Postercrousel3 from "../assets/Places/3.png";
 import Postercrousel4 from "../assets/Places/4.png";
 import Poatry1 from "../assets/Places/shine (2)m.png";
-import Top1 from "../../public/images/Top1.png";
-import Bottom1 from "../../public/images/Bottom1.png";
+import Top1 from "/images/Top1.png";
+import Bottom1 from "/images/Bottom1.png";
 
 const Places = () => {
   const [currentPoster, setCurrentPoster] = useState<number>(0);
@@ -63,8 +63,6 @@ const Places = () => {
   ];
 
   const isMobile = useMediaQuery("(max-width:767px)");
-  const isTablet = useMediaQuery("(max-width:900px)");
-  const isCarousel = useMediaQuery("(max-width:1000px)");
 
   return (
     <Box

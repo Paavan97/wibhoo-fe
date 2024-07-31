@@ -10,15 +10,14 @@ import Home1 from "../assets/Home/Poatry (3).png";
 import communitycentric from "../assets/Home/Poatry (5).png";
 import Carousel from "../views/home/Carousel";
 import MobileCarousel from "../views/home/MobileCarousel";
-import Top1 from "../../public/images/Top1.png";
-import Bottom1 from "../../public/images/Bottom1.png";
+import Top1 from "/images/Top1.png";
+import Bottom1 from "/images/Bottom1.png";
 
-import Bottom from "../../public/images/Top.png";
-import Top from "../../public/images/bottom.png";
+import Bottom from "/images/Top.png";
+import Top from "/images/bottom.png";
 
 const Home = () => {
   const isMobile = useMediaQuery("(max-width:767px)");
-  const isTablet = useMediaQuery("(max-width:900px)");
   const isCarousel = useMediaQuery("(max-width:1000px)");
 
   return (

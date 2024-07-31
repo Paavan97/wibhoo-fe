@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "../../assets/FooterServices/hs.png";
-import Top1 from "../../../public/images/Top1.png";
-import Bottom1 from "../../../public/images/Bottom1.png";
+import Top1 from "/images/Top1.png";
+import Bottom1 from "/images/Bottom1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DoneIcon from "@mui/icons-material/Done";
 import {
@@ -10,9 +10,9 @@ import {
   faFingerprint,
 } from "@fortawesome/free-solid-svg-icons";
 import ServiceCategories from "../../views/ProductsFooter/SeviceCategories";
-import Bottom from "../../../public/images/Top.png";
+import Bottom from "/images/Top.png";
 import Platform from "../../assets/FooterServices/shine .png";
-import Top from "../../../public/images/bottom.png";
+import Top from "/images/bottom.png";
 
 const Service = () => {
   const features = [
@@ -54,7 +54,7 @@ const Service = () => {
             bottom: 0,
             left: 0,
             backgroundImage:
-              'url("../../../public/images/RedSplashTop.png"),url("../../../public/images/GreenSplashBottom.png")',
+              'url("/images/RedSplashTop.png"),url("/images/GreenSplashBottom.png")',
             backgroundRepeat: "no-repeat,no-repeat",
             backgroundPosition: "top right, bottom left",
             opacity: 0.7,
