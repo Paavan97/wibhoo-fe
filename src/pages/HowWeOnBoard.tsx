@@ -5,8 +5,8 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import Top from "../../public/images/bottom.png";
-import Bottom from "../../public/images/Top.png";
+import Top from "/images/bottom.png";
+import Bottom from "/images/Top.png";
 import Banner from "../assets/HowWeOnBoard/Poatry (1).png";
 
 const HowWeOnBoard = () => {

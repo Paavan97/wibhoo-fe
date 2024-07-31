@@ -6,7 +6,6 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  useMediaQuery,
   IconButton,
   InputBase,
   Button,
@@ -14,8 +13,8 @@ import {
 import productData from "../data/productData.json"; // Adjust the path as needed
 import SearchIcon from "@mui/icons-material/Search";
 import { useEffect } from "react";
-import Bottom from "../../public/images/Top.png";
-import Top from "../../public/images/bottom.png";
+import Bottom from "/images/Top.png";
+import Top from "/images/bottom.png";
 
 const ProductPage = () => {
   const { category } = useParams();

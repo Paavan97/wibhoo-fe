@@ -1,5 +1,5 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import splash from "../../../public/images/footerBackSplash.png";
+import splash from "/images/footerBackSplash.png";
 
 const Terms = () => {
   const isTablet = useMediaQuery("(max-width:1113px)");

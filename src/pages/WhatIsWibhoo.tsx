@@ -14,10 +14,10 @@ import image6 from "../assets/WhatIsWibhoo/goal_align_14.png";
 import image7 from "../assets/WhatIsWibhoo/goal_align_15.png";
 import image8 from "../assets/WhatIsWibhoo/goal_align_17.png";
 import banner from "../assets/WhatIsWibhoo/Poatry.png";
-import Top from "../../public/images/bottom.png";
-import Bottom from "../../public/images/Top.png";
-import Top1 from "../../public/images/Top1.png";
-import Bottom1 from "../../public/images/Bottom1.png";
+import Top from "/images/bottom.png";
+import Bottom from "/images/Top.png";
+import Top1 from "/images/Top1.png";
+import Bottom1 from "/images/Bottom1.png";
 
 const WhatIsWibhoo = () => {
   const images = [

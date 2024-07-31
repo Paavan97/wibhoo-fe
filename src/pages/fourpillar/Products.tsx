@@ -2,8 +2,8 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "../../assets/FooterProducts/pm hero.png";
 import { Typewriter } from "react-simple-typewriter";
 import ProductCategories from "../../views/ProductsFooter/ProductCategories";
-import Top1 from "../../../public/images/Top1.png";
-import Bottom1 from "../../../public/images/Bottom1.png";
+import Top1 from "/images/Top1.png";
+import Bottom1 from "/images/Bottom1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLeaf,
@@ -55,7 +55,7 @@ const Products = () => {
             bottom: 0,
             left: 0,
             backgroundImage:
-              'url("../../../public/images/RedSplashTop.png"),url("../../../public/images/GreenSplashBottom.png")',
+              'url("/images/RedSplashTop.png"),url("/images/GreenSplashBottom.png")',
             backgroundRepeat: "no-repeat,no-repeat",
             backgroundPosition: "top right, bottom left",
             opacity: 0.7,
