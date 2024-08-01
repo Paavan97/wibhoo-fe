@@ -18,7 +18,7 @@ const HowWeOnBoard = () => {
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Box sx={{ marginTop: "40px" }}>
+    <Box sx={{ marginTop: "100px" }}>
       <Box
         sx={{
           display: "flex",

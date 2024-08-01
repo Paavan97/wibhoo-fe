@@ -24,6 +24,7 @@ const UsePage = () => {
     <Box
       sx={{
         padding: !isTablet ? "20px 140px 20px 140px" : "10px",
+        marginTop: "100px",
       }}
     >
       {selectedCategory && (

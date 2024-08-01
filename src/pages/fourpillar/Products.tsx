@@ -45,7 +45,7 @@ const Products = () => {
     <Box>
       <Box
         sx={{
-          height: { md: "70vh", sm: "900px", xs: "1000px" },
+          height: { md: "70vh", sm: "900px", xs: "1150px" },
           width: "100%",
           position: "relative",
           overflow: "hidden",
@@ -106,6 +106,7 @@ const Products = () => {
                   color: "#9cf5b8",
                   fontSize: { md: "3em", xs: "4em" },
                   margin: "0px",
+                  marginTop: "100px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >

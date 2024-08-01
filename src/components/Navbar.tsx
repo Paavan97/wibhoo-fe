@@ -14,9 +14,19 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
-import { Backdrop, Dialog, Grid, Slide, useMediaQuery } from "@mui/material";
+import {
+  Backdrop,
+  Dialog,
+  DialogContent,
+  Grid,
+  Slide,
+  useMediaQuery,
+} from "@mui/material";
 import { Link, useLocation } from "react-router-dom"; // Import Link from react-router-dom for routing
 import wibhooIcon from "../assets/dark 1.png";
+import CloseIcon from "@mui/icons-material/Close";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import Close from "@mui/icons-material/Close";
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
@@ -34,10 +44,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: theme.palette.common.white,
+  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  "&:hover": {
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
+  },
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: "90%",
+  width: "100%",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
@@ -198,22 +211,22 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar sx={{ backgroundColor: "#272727" }}>
           <Box>
             <img src={wibhooIcon} alt="wibhooicon" style={{ height: "70px" }} />
           </Box>
-          <Search onClick={handleSearchClick}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <InputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: "20px" }}>
+            <Search onClick={handleSearchClick}>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Find..."
+                inputProps={{ "aria-label": "search" }}
+              />
+            </Search>
             <IconButton
               size="large"
               aria-label="show 4 new mails"
@@ -223,6 +236,7 @@ export default function Navbar() {
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
+
             <IconButton
               size="large"
               edge="start"
@@ -235,6 +249,18 @@ export default function Navbar() {
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <IconButton sx={{ color: "white" }} onClick={handleSearchClick}>
+              <SearchIcon />
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 4 new mails"
+              color="inherit"
+            >
+              <Badge badgeContent={4} color="error">
+                <ShoppingCartIcon />
+              </Badge>
+            </IconButton>
             <IconButton
               size="large"
               aria-label="show more"
@@ -250,79 +276,51 @@ export default function Navbar() {
       </AppBar>
 
       <Dialog
-        sx={{
-          backgroundColor: "#fff",
-          height: "50%",
-          // backgroundColor: "rgba(0, 0, 0, 0.5)",
-          backdropFilter: "blur(4px)",
-        }}
         open={open}
         onClose={handleClose}
         TransitionComponent={SlideTransition}
-        BackdropComponent={Backdrop}
-        // BackdropProps={{
-        //   style: {
-        //     backgroundColor: "rgba(0, 0, 0, 0.5)",
-        //     backdropFilter: "blur(4px)",
-        //   },
-        // }}
-        PaperProps={{
-          style: {
-            width: "50%",
-            margin: "auto",
-            // top: "25%",
-          },
-        }}
+        fullWidth
+        maxWidth="sm"
       >
-        <Box
-          sx={{
-            backgroundColor: "#fff",
-            padding: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-        </Box>
-      </Dialog>
+        <DialogContent>
+          <Grid container alignItems="center">
+            <Grid item xs={10}>
+              <Box display="flex" alignItems="center">
+                <SearchIcon />
+                <InputBase
+                  placeholder="Search…"
+                  inputProps={{ "aria-label": "search" }}
+                  fullWidth
+                  sx={{ marginLeft: 1 }}
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={2} textAlign="right">
+              <IconButton onClick={handleClose}>
+                <CloseIcon />
+              </IconButton>
+            </Grid>
+          </Grid>
 
-      {/* <Dialog
-        fullScreen
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={SlideTransition}
-      >
-        <Box
-          sx={{
-            backgroundColor: "#fff",
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: 2,
-          }}
-        >
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-        </Box>
-      </Dialog> */}
+          <Box mt={4}>
+            <Typography variant="h6">Popular</Typography>
+            <Box mt={2}>
+              {[
+                "Soroban",
+                "Developer documentation",
+                "Stellar for Aid",
+                "Case studies",
+                "Moneygram",
+              ].map((item, index) => (
+                <Box key={index} display="flex" alignItems="center" mt={1}>
+                  <SearchIcon sx={{ marginRight: 1 }} />
+                  <Typography>{item}</Typography>
+                </Box>
+              ))}
+            </Box>
+          </Box>
+        </DialogContent>
+      </Dialog>
 
       <Drawer
         anchor="right"
@@ -347,9 +345,21 @@ export default function Navbar() {
           >
             {showSubMenu ? (
               <Box>
-                <IconButton onClick={handleBackClick} sx={{ m: 2 }}>
-                  Back
-                </IconButton>
+                <Box
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <IconButton onClick={handleBackClick} sx={{ m: 2 }}>
+                    <ArrowBackIcon />
+                  </IconButton>
+                  <IconButton
+                    onClick={() => setDrawerOpen(false)}
+                    sx={{ m: 2 }}
+                  >
+                    <Close />
+                  </IconButton>
+                </Box>
                 <Typography
                   variant="body2"
                   sx={{ mt: 2, color: "black", px: 2 }}

@@ -29,7 +29,7 @@ const Communities = () => {
             justifyContent: "center",
             alignItems: "center",
             gap: "50px",
-            marginTop: "60px",
+            marginTop: "100px",
             flexDirection: { md: "row", xs: "column" },
           }}
         >

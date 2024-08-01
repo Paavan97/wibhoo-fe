@@ -42,6 +42,8 @@ const WhatIsWibhoo = () => {
     <Box
       sx={{
         display: "flex",
+        marginTop: "100px",
+
         flexDirection: "column",
         width: "100%",
         justifyContent: "center",
@@ -56,6 +58,7 @@ const WhatIsWibhoo = () => {
           width: "90%",
           // padding: "20px",
           color: "white",
+
           borderRadius: "20px",
           gap: "30px",
         }}

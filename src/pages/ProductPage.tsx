@@ -34,6 +34,7 @@ const ProductPage = () => {
     <Box
       sx={{
         width: "100%",
+        marginTop: "100px",
       }}
     >
       {selectedCategory && (

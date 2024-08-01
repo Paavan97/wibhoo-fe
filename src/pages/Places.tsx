@@ -82,6 +82,7 @@ const Places = () => {
         sx={{
           width: "100%",
           display: "flex",
+          marginTop: "100px",
           flexDirection: isMobile ? "column" : "none",
           justifyContent: "center", // Center horizontally
           alignItems: "center", // Center vertically
