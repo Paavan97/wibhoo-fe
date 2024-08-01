@@ -44,7 +44,7 @@ const Service = () => {
     <Box>
       <Box
         sx={{
-          height: { md: "70vh", sm: "900px", xs: "1000px" },
+          height: { md: "70vh", sm: "900px", xs: "1150px" },
           width: "100%",
           position: "relative",
           overflow: "hidden",
@@ -105,6 +105,7 @@ const Service = () => {
                   color: "#9cf5b8",
                   fontSize: { md: "3em", xs: "2.7em" },
                   margin: "0px",
+                  marginTop: "100px",
                   textAlign: { xs: "center", md: "left" },
                 }}
               >

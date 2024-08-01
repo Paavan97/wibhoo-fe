@@ -35,6 +35,7 @@ const Home = () => {
           width: "100%",
           height: "90vh",
           display: "flex",
+          marginTop: "100px",
           flexDirection: isMobile ? "column" : "none",
           justifyContent: "center", // Center horizontally
           alignItems: "center", // Center vertically
