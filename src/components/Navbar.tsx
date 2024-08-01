@@ -306,11 +306,11 @@ export default function Navbar() {
             <Typography variant="h6">Popular</Typography>
             <Box mt={2}>
               {[
-                "Soroban",
-                "Developer documentation",
-                "Stellar for Aid",
-                "Case studies",
-                "Moneygram",
+                "Home & Living",
+                "Fashion & Clothing",
+                "Beauty & Care",
+                "Eat & Drink",
+                "Lifestyle Essentials",
               ].map((item, index) => (
                 <Box key={index} display="flex" alignItems="center" mt={1}>
                   <SearchIcon sx={{ marginRight: 1 }} />
