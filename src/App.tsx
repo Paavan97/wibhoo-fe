@@ -16,6 +16,9 @@ import Terms from "./pages/Support/Terms";
 import Shipping from "./pages/Support/Shipping";
 import HowWeOnBoard from "./pages/HowWeOnBoard";
 import Privacy from "./pages/Support/Privacy";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import ProductDetail from "./views/ProductPage/ProductDetails";
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
-        <Route path="/products/:category" element={<ProductPage />} />
+        <Route path="/category/:category" element={<ProductPage />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<Checkout />} />
+        <Route path="products/:id" element={<ProductDetail />} />
         <Route path="/use/:category" element={<UsePage />} />
         <Route path="/service/:category" element={<UsePage />} />
         <Route path="communities" element={<Communities />} />

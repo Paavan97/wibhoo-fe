@@ -27,6 +27,9 @@ import wibhooIcon from "../assets/dark 1.png";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Close from "@mui/icons-material/Close";
+import { useAppDispatch, useAppSelector } from "../Redux/App/hooks";
+import { RootState } from "../Redux/App/store";
+import { fetchAsyncCategories } from "../Redux/feature/CategorySlice";
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
@@ -74,19 +77,24 @@ const SlideTransition = (props: any) => {
 export default function Navbar() {
   const isMobile = useMediaQuery("(max-width:767px)");
   const [drawerOpen, setDrawerOpen] = React.useState(false);
-  const [selectedMenu, setSelectedMenu] = React.useState<string>("");
+  const [selectedMenu, setSelectedMenu] = React.useState<any>("");
   const [showSubMenu, setShowSubMenu] = React.useState<boolean>(false);
+  const dispatch = useAppDispatch();
+  const categories = useAppSelector(
+    (state: RootState) => state.ProductCategory.categories
+  );
+  const categoriesStatus = useAppSelector(
+    (state: RootState) => state.ProductCategory.categoriesStatus
+  );
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleMenuItemClick = (menu: string) => {
-    if (selectedMenu === menu) {
-      setShowSubMenu(!showSubMenu); // Toggle submenu if already selected
-    } else {
-      setSelectedMenu(menu);
-      setShowSubMenu(true); // Open submenu
+  const handleMenuItemClick = (menuName: string) => {
+    setSelectedMenu(menuName);
+    if (menuName === "Shop") {
+      setShowSubMenu(true);
     }
   };
 
@@ -95,11 +103,77 @@ export default function Navbar() {
     setSelectedMenu(""); // Go back to the main menu
   };
 
+  // const mainMenus = [
+  //   {
+  //     name: "Home",
+  //     path: "/",
+  //   },
+  //   { name: "Shop", path: "" },
+  //   { name: "Use", path: "" },
+  //   { name: "Places", path: "/places-spaces" },
+  //   { name: "Communities", path: "/communities" },
+  //   { name: "Our Story", path: "" },
+  // ];
+
+  // const subMenus: {
+  //   [key: string]: {
+  //     items: { name: string; path: string }[];
+  //     description: string;
+  //   };
+  // } = {
+  //   Home: {
+  //     items: [{ name: "", path: "/" }],
+  //     description:
+  //       "At Wibhoo, we prioritize making conscious living easy and accessible by emphasizing local solutions. This not only helps boost the local economy but also reduces negative environmental impacts.",
+  //   },
+  //   Shop: {
+  //     items: [
+  //       { name: "Home & Living", path: "/category/home-living" },
+  //       { name: "Fashion & Clothing", path: "/category/fashion-clothing" },
+  //       { name: "Beauty & Care", path: "/category/beauty-care" },
+  //       { name: "Eat & Drink", path: "/category/eat-drink" },
+  //       {
+  //         name: "Lifestyle Essentials",
+  //         path: "/category/lifestyle-essentials",
+  //       },
+  //     ],
+  //     description:
+  //       "Discover products that prioritize sustainability and reduce environmental impact.",
+  //   },
+  //   Use: {
+  //     items: [
+  //       { name: "Wellbeing & Care", path: "/use/wellbeing-care" },
+  //       { name: "Eco-Tourism", path: "/use/eco-tourism" },
+  //       { name: "Waste Management", path: "/use/waste-management" },
+  //       { name: "Home & Garden", path: "/use/home-garden" },
+  //       { name: "Event Planning", path: "/use/event-planning" },
+  //       { name: "Building & Architecture", path: "/use/building-architecture" },
+  //       { name: "Transport & Logistic", path: "/use/transport-logistic" },
+  //       { name: "Green Energy & Audits", path: "/use/green-energy-audits" },
+  //     ],
+  //     description:
+  //       "Access sustainable services designed to simplify your eco-friendly routines.",
+  //   },
+  //   Places: {
+  //     items: [{ name: "", path: "/places-spaces" }],
+  //     description:
+  //       "Discover products that prioritize sustainability and reduce environmental impact.",
+  //   },
+  //   Communities: {
+  //     items: [{ name: "", path: "/communities" }],
+  //     description:
+  //       "Join vibrant communities and Events dedicated to conscious living",
+  //   },
+  //   "Our Story": {
+  //     items: [
+  //       { name: "What is Wibhoo", path: "/what-is-wibhoo" },
+  //       { name: "How We Onboard", path: "/how-we-onboard" },
+  //     ],
+  //     description: "Learn more about our journey and values.",
+  //   },
+  // };
   const mainMenus = [
-    {
-      name: "Home",
-      path: "/",
-    },
+    { name: "Home", path: "/" },
     { name: "Shop", path: "" },
     { name: "Use", path: "" },
     { name: "Places", path: "/places-spaces" },
@@ -107,60 +181,29 @@ export default function Navbar() {
     { name: "Our Story", path: "" },
   ];
 
-  const subMenus: {
-    [key: string]: {
-      items: { name: string; path: string }[];
-      description: string;
-    };
-  } = {
+  const subMenus = {
     Home: {
       items: [{ name: "", path: "/" }],
       description:
         "At Wibhoo, we prioritize making conscious living easy and accessible by emphasizing local solutions. This not only helps boost the local economy but also reduces negative environmental impacts.",
     },
     Shop: {
-      items: [
-        { name: "Home & Living", path: "/products/home-living" },
-        { name: "Fashion & Clothing", path: "/products/fashion-clothing" },
-        { name: "Beauty & Care", path: "/products/beauty-care" },
-        { name: "Eat & Drink", path: "/products/eat-drink" },
-        {
-          name: "Lifestyle Essentials",
-          path: "/products/lifestyle-essentials",
-        },
-      ],
       description:
         "Discover products that prioritize sustainability and reduce environmental impact.",
     },
     Use: {
-      items: [
-        { name: "Wellbeing & Care", path: "/use/wellbeing-care" },
-        { name: "Eco-Tourism", path: "/use/eco-tourism" },
-        { name: "Waste Management", path: "/use/waste-management" },
-        { name: "Home & Garden", path: "/use/home-garden" },
-        { name: "Event Planning", path: "/use/event-planning" },
-        { name: "Building & Architecture", path: "/use/building-architecture" },
-        { name: "Transport & Logistic", path: "/use/transport-logistic" },
-        { name: "Green Energy & Audits", path: "/use/green-energy-audits" },
-      ],
       description:
         "Access sustainable services designed to simplify your eco-friendly routines.",
     },
     Places: {
-      items: [{ name: "", path: "/places-spaces" }],
       description:
         "Discover products that prioritize sustainability and reduce environmental impact.",
     },
     Communities: {
-      items: [{ name: "", path: "/communities" }],
       description:
         "Join vibrant communities and Events dedicated to conscious living",
     },
     "Our Story": {
-      items: [
-        { name: "What is Wibhoo", path: "/what-is-wibhoo" },
-        { name: "How We Onboard", path: "/how-we-onboard" },
-      ],
       description: "Learn more about our journey and values.",
     },
   };
@@ -181,33 +224,39 @@ export default function Navbar() {
   };
 
   React.useEffect(() => {
-    const path = location.pathname;
-
-    // Find the active main menu
-    const activeMain = mainMenus.find(
-      (menu) => menu.path && path.startsWith(menu.path)
-    );
-    if (activeMain) {
-      setActiveMenu(activeMain.name);
-
-      // Find the active submenu if it exists
-      if (subMenus[activeMain.name]) {
-        const activeSub = subMenus[activeMain.name].items.find((item) =>
-          path.startsWith(item.path)
-        );
-        if (activeSub) {
-          setActiveSubMenu(activeSub.path);
-        } else {
-          setActiveSubMenu("");
-        }
-      } else {
-        setActiveSubMenu("");
-      }
-    } else {
-      setActiveMenu("");
-      setActiveSubMenu("");
+    if (selectedMenu === "Shop" && categoriesStatus === "idle") {
+      dispatch(fetchAsyncCategories());
     }
-  }, [location]);
+  }, [selectedMenu, categoriesStatus, dispatch]);
+
+  // React.useEffect(() => {
+  //   const path = location.pathname;
+
+  //   // Find the active main menu
+  //   const activeMain = mainMenus.find(
+  //     (menu) => menu.path && path.startsWith(menu.path)
+  //   );
+  //   if (activeMain) {
+  //     setActiveMenu(activeMain.name);
+
+  //     // Find the active submenu if it exists
+  //     if (subMenus[activeMain.name]) {
+  //       const activeSub = subMenus[activeMain.name].items.find((item) =>
+  //         path.startsWith(item.path)
+  //       );
+  //       if (activeSub) {
+  //         setActiveSubMenu(activeSub.path);
+  //       } else {
+  //         setActiveSubMenu("");
+  //       }
+  //     } else {
+  //       setActiveSubMenu("");
+  //     }
+  //   } else {
+  //     setActiveMenu("");
+  //     setActiveSubMenu("");
+  //   }
+  // }, [location]);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -232,9 +281,11 @@ export default function Navbar() {
               aria-label="show 4 new mails"
               color="inherit"
             >
-              <Badge badgeContent={4} color="error">
-                <ShoppingCartIcon />
-              </Badge>
+              <Link style={{ color: "white" }} to={"cart"}>
+                <Badge badgeContent={4} color="error">
+                  <ShoppingCartIcon />
+                </Badge>
+              </Link>
             </IconButton>
 
             <IconButton
@@ -257,9 +308,11 @@ export default function Navbar() {
               aria-label="show 4 new mails"
               color="inherit"
             >
-              <Badge badgeContent={4} color="error">
-                <ShoppingCartIcon />
-              </Badge>
+              <Link style={{ color: "white" }} to={"cart"}>
+                <Badge badgeContent={4} color="error">
+                  <ShoppingCartIcon />
+                </Badge>
+              </Link>
             </IconButton>
             <IconButton
               size="large"
@@ -364,15 +417,15 @@ export default function Navbar() {
                   variant="body2"
                   sx={{ mt: 2, color: "black", px: 2 }}
                 >
-                  {subMenus[selectedMenu]?.description}
+                  {/* {subMenus[selectedMenu]?.description} */}
                 </Typography>
                 <List>
-                  {subMenus[selectedMenu]?.items.map((item) => (
+                  {categories?.slice(0, 8).map((item, index) => (
                     <ListItem
                       button
-                      key={item.path}
+                      key={index}
                       component={Link}
-                      to={item.path}
+                      to={`category/${item.slug}`}
                       sx={{
                         color: "black",
                         "&:hover": {
@@ -414,11 +467,9 @@ export default function Navbar() {
                       to={menu.path || undefined}
                       key={menu.name}
                       onClick={() => {
-                        if (subMenus[menu.name]) {
-                          handleMenuItemClick(menu.name);
-                          if (menu.path) {
-                            setDrawerOpen(false);
-                          }
+                        handleMenuItemClick(menu.name);
+                        if (menu.path) {
+                          setDrawerOpen(false);
                         }
                       }}
                       sx={{
@@ -465,11 +516,9 @@ export default function Navbar() {
                     to={menu.path || undefined}
                     key={menu.name}
                     onClick={() => {
-                      if (subMenus[menu.name]) {
-                        handleMenuItemClick(menu.name);
-                        if (menu.path) {
-                          setDrawerOpen(false);
-                        }
+                      handleMenuItemClick(menu.name);
+                      if (menu.path) {
+                        setDrawerOpen(false);
                       }
                     }}
                     sx={{
@@ -490,18 +539,18 @@ export default function Navbar() {
               </List>
             </Grid>
             <Grid item xs={6} sx={{ backgroundColor: "#9cf5b8", p: 2 }}>
-              {selectedMenu && (
+              {selectedMenu === "Shop" && (
                 <>
                   <Typography variant="body2" sx={{ mt: 8, color: "black" }}>
-                    {subMenus[selectedMenu]?.description}
+                    {/* {subMenus[selectedMenu]?.description} */}
                   </Typography>
                   <List>
-                    {subMenus[selectedMenu]?.items.map((item) => (
+                    {categories?.map((item, index) => (
                       <ListItem
                         button
-                        key={item.path}
+                        key={index}
                         component={Link}
-                        to={item.path}
+                        to={`category/${item.slug}`}
                         onClick={() => {
                           setDrawerOpen(false);
                           setShowSubMenu(false);
