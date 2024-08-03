@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import {
   Box,
   Grid,
@@ -10,21 +11,36 @@ import {
   InputBase,
   Button,
 } from "@mui/material";
-import productData from "../data/productData.json"; // Adjust the path as needed
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../Redux/App/store";
+import {
+  fetchAsyncProductsOfCategory,
+  getAllProductsByCategory,
+  getCategoryProductsStatus,
+} from "../Redux/feature/CategorySlice";
 import SearchIcon from "@mui/icons-material/Search";
-import { useEffect } from "react";
 import Bottom from "/images/Top.png";
 import Top from "/images/bottom.png";
 
 const ProductPage = () => {
+  const id = useParams();
   const { category } = useParams();
+  console.log(id);
+  const dispatch = useDispatch<AppDispatch>();
+  const products = useSelector((state: RootState) =>
+    getAllProductsByCategory(state)
+  );
+  const productsStatus = useSelector((state: RootState) =>
+    getCategoryProductsStatus(state)
+  );
   const tags = ["Art", "Food", "Other", "Studio"];
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-
-  const selectedCategory = productData.find((cat) => cat.path === category);
+    if (category) {
+      dispatch(fetchAsyncProductsOfCategory(category));
+    }
+  }, [category, dispatch]);
 
   const addToCart = (product: any) => {
     console.log("Product details:", product);
@@ -37,17 +53,18 @@ const ProductPage = () => {
         marginTop: "100px",
       }}
     >
-      {selectedCategory && (
+      {productsStatus === "loading" && <p>Loading...</p>}
+      {productsStatus === "succeeded" && (
         <>
           <Box sx={{ padding: "40px" }}>
             <Typography variant="h4" sx={{ color: "#9cf5b8", marginBottom: 2 }}>
-              {selectedCategory.name}
+              {category}
             </Typography>
             <Typography
               variant="body1"
               sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
             >
-              {selectedCategory.description}
+              Discover our range of {category} products.
             </Typography>
           </Box>
 
@@ -59,11 +76,7 @@ const ProductPage = () => {
               justifyContent: "center",
             }}
           >
-            <img
-              src={Top} // Replace with the actual image path
-              alt="Above Product Grid"
-              style={{ width: "100%" }}
-            />
+            <img src={Top} alt="Above Product Grid" style={{ width: "100%" }} />
           </Box>
 
           <Box
@@ -84,7 +97,7 @@ const ProductPage = () => {
               }}
               spacing={4}
             >
-              {selectedCategory.products.map((product) => (
+              {products.map((product) => (
                 <Grid
                   item
                   sx={{
@@ -98,53 +111,55 @@ const ProductPage = () => {
                   md={3}
                   key={product.id}
                 >
-                  <Card
-                    sx={{
-                      width: "300px",
-                      height: "450px",
-                      padding: "0px",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
+                  <Link to={`/products/${product?.id}`}>
+                    <Card
                       sx={{
                         width: "300px",
-                        height: "250px",
-                        objectFit: "cover",
-                      }}
-                      image={product.image}
-                      alt={product.name}
-                    />
-                    <CardContent sx={{ padding: "8px", flexGrow: 1 }}>
-                      <Typography gutterBottom variant="h6" component="div">
-                        {product.name}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {product.description}
-                      </Typography>
-                      <Typography variant="h6" color="text.primary">
-                        ${product.price.toFixed(2)}
-                      </Typography>
-                    </CardContent>
-                    <Box
-                      sx={{
+                        height: "450px",
+                        padding: "0px",
                         display: "flex",
-                        justifyContent: "center",
-                        padding: "8px",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={() => addToCart(product)}
+                      <CardMedia
+                        component="img"
+                        sx={{
+                          width: "300px",
+                          height: "250px",
+                          objectFit: "cover",
+                        }}
+                        image={product.images[0]}
+                        alt={product.title}
+                      />
+                      <CardContent sx={{ padding: "8px", flexGrow: 1 }}>
+                        <Typography gutterBottom variant="h6" component="div">
+                          {product.title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          {product.brand}
+                        </Typography>
+                        <Typography variant="h6" color="text.primary">
+                          ${product.price.toFixed(2)}
+                        </Typography>
+                      </CardContent>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          padding: "8px",
+                        }}
                       >
-                        Add to Cart
-                      </Button>
-                    </Box>
-                  </Card>
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          onClick={() => addToCart(product)}
+                        >
+                          Add to Cart
+                        </Button>
+                      </Box>
+                    </Card>
+                  </Link>
                 </Grid>
               ))}
             </Grid>
@@ -159,7 +174,7 @@ const ProductPage = () => {
             }}
           >
             <img
-              src={Bottom} // Replace with the actual image path
+              src={Bottom}
               alt="Below Product Grid"
               style={{ width: "100%" }}
             />
@@ -176,41 +191,26 @@ const ProductPage = () => {
           marginTop: "80px",
         }}
       >
-        <Typography
-          sx={{
-            fontSize: "",
-          }}
-        >
-          All Tags
-        </Typography>
-
-        <Box
-          sx={{
-            display: "flex",
-            gap: "14px",
-          }}
-        >
-          {tags.map((tag, index) => {
-            return (
-              <Typography
-                key={index}
-                variant="body1"
-                sx={{
-                  fontSize: "12px",
-                  backgroundColor: "#9cf5b8",
-                  color: "#2F4F4F",
-                  paddingX: "8px",
-                  paddingY: "5px",
-                  borderRadius: "8px",
-                  fontWeight: "600",
-                }}
-              >
-                {tag}
-              </Typography>
-            );
-          })}
+        <Typography>All Tags</Typography>
+        <Box sx={{ display: "flex", gap: "14px" }}>
+          {tags.map((tag, index) => (
+            <Typography
+              key={index}
+              variant="body1"
+              sx={{
+                fontSize: "12px",
+                backgroundColor: "#9cf5b8",
+                color: "#2F4F4F",
+                paddingX: "8px",
+                paddingY: "5px",
+                borderRadius: "8px",
+                fontWeight: "600",
+              }}
+            >
+              {tag}
+            </Typography>
+          ))}
         </Box>
-
         <Box
           sx={{
             width: "80%",
