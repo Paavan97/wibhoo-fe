@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <Box sx={{ padding: "80px 30px" }}>
       <Divider
-        sx={{ height: "0.1px", backgroundColor: "#9cf5b8" }}
+        sx={{ height: "0.1px", backgroundColor: "#12CD7E" }}
         variant="fullWidth"
       />
       <Box
@@ -44,7 +44,7 @@ const Footer = () => {
           }}
         >
           <Box sx={{ gap: "15px", display: "flex", flexDirection: "column" }}>
-            <Box sx={{ fontSize: "16px", fontWeight: "600", color: "white" }}>
+            <Box sx={{ fontSize: "16px", fontWeight: "600", color: "#112121" }}>
               4 Pillars
             </Box>
             <Box
@@ -59,7 +59,7 @@ const Footer = () => {
                 to={"/Product"}
                 style={{
                   fontSize: "14px",
-                  color: "white",
+                  color: "#112121",
                 }}
                 className="FooterPagesHover"
               >
@@ -69,7 +69,7 @@ const Footer = () => {
                 to={"/service"}
                 style={{
                   fontSize: "14px",
-                  color: "white",
+                  color: "#112121",
                 }}
                 className="FooterPagesHover"
               >
@@ -79,7 +79,7 @@ const Footer = () => {
                 to={"/places-spaces"}
                 style={{
                   fontSize: "14px",
-                  color: "white",
+                  color: "#112121",
                 }}
                 className="FooterPagesHover"
               >
@@ -89,7 +89,7 @@ const Footer = () => {
                 to={"/communities"}
                 style={{
                   fontSize: "14px",
-                  color: "white",
+                  color: "#112121",
                 }}
                 className="FooterPagesHover"
               >
@@ -98,7 +98,7 @@ const Footer = () => {
             </Box>
           </Box>
           <Box sx={{ gap: "15px", display: "flex", flexDirection: "column" }}>
-            <Box sx={{ fontSize: "18px", fontWeight: "600", color: "white" }}>
+            <Box sx={{ fontSize: "18px", fontWeight: "600", color: "#112121" }}>
               About us
             </Box>
             <Box
@@ -113,7 +113,7 @@ const Footer = () => {
                 to={"/what-is-wibhoo"}
                 style={{
                   fontSize: "14px",
-                  color: "white",
+                  color: "#112121",
                 }}
                 className="FooterPagesHover"
               >
@@ -123,7 +123,7 @@ const Footer = () => {
                 to={"/how-we-onboard"}
                 style={{
                   fontSize: "14px",
-                  color: "white",
+                  color: "#112121",
                 }}
                 className="FooterPagesHover"
               >
@@ -135,7 +135,7 @@ const Footer = () => {
       </Box>
       <Box sx={{ marginTop: "80px" }}>
         <Divider
-          sx={{ height: "1px", backgroundColor: "#9cf5b8" }}
+          sx={{ height: "1px", backgroundColor: "#12CD7E" }}
           variant="fullWidth"
         />
       </Box>
@@ -155,7 +155,7 @@ const Footer = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "white",
+                color: "#112121",
                 fontSize: "30px",
               }}
             >
@@ -165,7 +165,7 @@ const Footer = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "white",
+                color: "#112121",
                 fontSize: "30px",
               }}
             >
@@ -175,7 +175,7 @@ const Footer = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                color: "white",
+                color: "#112121",
                 fontSize: "30px",
               }}
             >
@@ -194,21 +194,21 @@ const Footer = () => {
         >
           <Link
             to={"/terms"}
-            style={{ color: "white", fontSize: "20px" }}
+            style={{ color: "#112121", fontSize: "20px" }}
             className="FooterPagesHover"
           >
             Terms of Service
           </Link>
           <Link
             to={"/shipping"}
-            style={{ color: "white", fontSize: "20px" }}
+            style={{ color: "#112121", fontSize: "20px" }}
             className="FooterPagesHover"
           >
             Shipping & Return
           </Link>
           <Link
             to={"/privacy"}
-            style={{ color: "white", fontSize: "20px" }}
+            style={{ color: "#112121", fontSize: "20px" }}
             className="FooterPagesHover"
           >
             Privacy

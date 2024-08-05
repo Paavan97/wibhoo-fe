@@ -20,7 +20,7 @@ const Communities = () => {
     >
       <Box
         sx={{
-          backgroundColor: "#9cf5b8",
+          backgroundColor: "#12CD7E",
         }}
       >
         <Box
@@ -66,7 +66,9 @@ const Communities = () => {
             >
               Meet & Join like-minded people
             </Box>
-            <Box sx={{ fontSize: "18px", color: "white", textAlign: "center" }}>
+            <Box
+              sx={{ fontSize: "18px", color: "#112121", textAlign: "center" }}
+            >
               Discover engaging events and vibrant communities that celebrate
               art, culture, and conscious living
             </Box>
@@ -94,7 +96,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Artistic Exploration
                 </Box>
-                <Box sx={{ color: "white", fontSize: "18px" }}>
+                <Box sx={{ color: "#112121", fontSize: "18px" }}>
                   Immerse yourself in a world of creativity with Exhibitions,
                   Workshops, and Performances
                 </Box>
@@ -113,7 +115,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Holistic Wellness
                 </Box>
-                <Box sx={{ color: "white", fontSize: "18px" }}>
+                <Box sx={{ color: "#112121", fontSize: "18px" }}>
                   Join wellness retreats that promote balance and harmony for
                   mind, body, and soul.
                 </Box>
@@ -132,7 +134,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Sustainable Living
                 </Box>
-                <Box sx={{ color: "white", fontSize: "18px" }}>
+                <Box sx={{ color: "#112121", fontSize: "18px" }}>
                   Engage in eco-friendly initiatives, and Social groups to
                   empower the community
                 </Box>
@@ -151,7 +153,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Creative Collaboration
                 </Box>
-                <Box sx={{ color: "white", fontSize: "18px" }}>
+                <Box sx={{ color: "#112121", fontSize: "18px" }}>
                   Collaborate with artists, entrepreneurs, and changemakers to
                   drive innovation
                 </Box>
@@ -203,16 +205,16 @@ const Communities = () => {
           gap: "30px",
         }}
       >
-        <Box sx={{ fontSize: "2.5em", color: "#9cf5b8" }}>
+        <Box sx={{ fontSize: "2.5em", color: "#12CD7E" }}>
           Upcoming Sustainable Events and Workshops
         </Box>
-        <Box sx={{ fontSize: "14px", color: "white" }}>ALL CATEGORIES</Box>
+        <Box sx={{ fontSize: "14px", color: "#112121" }}>ALL CATEGORIES</Box>
         <Box
           sx={{
             marginTop: "20px",
             display: "flex",
             alignItems: "center",
-            backgroundColor: "white",
+            backgroundColor: "#112121",
             borderRadius: "10px",
             padding: "5px",
             width: "80%",
@@ -246,16 +248,16 @@ const Communities = () => {
           gap: "30px",
         }}
       >
-        <Box sx={{ fontSize: "2.5em", color: "#9cf5b8" }}>
+        <Box sx={{ fontSize: "2.5em", color: "#12CD7E" }}>
           Explore the Groups & Communities
         </Box>
-        <Box sx={{ fontSize: "14px", color: "white" }}>ALL CATEGORIES</Box>
+        <Box sx={{ fontSize: "14px", color: "#112121" }}>ALL CATEGORIES</Box>
         <Box
           sx={{
             marginTop: "20px",
             display: "flex",
             alignItems: "center",
-            backgroundColor: "white",
+            backgroundColor: "#112121",
             borderRadius: "10px",
             padding: "5px",
             width: "80%",
@@ -280,7 +282,7 @@ const Communities = () => {
         </Box>
       </Box>
       {/* <Divider
-        sx={{ height: "0.1px", backgroundColor: "#9cf5b8" }}
+        sx={{ height: "0.1px", backgroundColor: "#12CD7E" }}
         variant="fullWidth"
       /> */}
       <Box>
@@ -304,13 +306,13 @@ const Communities = () => {
             padding: "30px 0px",
             flexDirection: "column",
             gap: "30px",
-            backgroundColor: "#FF5757",
+            backgroundColor: "#FF6364",
           }}
         >
           <Box sx={{ fontSize: "2.5em", color: "#111917" }}>
             Projection for a Better Community
           </Box>
-          <Box sx={{ fontSize: "16px", color: "white" }}>
+          <Box sx={{ fontSize: "16px", color: "#112121" }}>
             In a year, Wibhoo will potentially execute the following initiatives
           </Box>
           <Box
@@ -331,11 +333,11 @@ const Communities = () => {
             >
               <Box sx={{ color: "#111917", fontSize: "3em" }}>50+</Box>
               <Box
-                sx={{ color: "#9cf5b8", fontSize: "18px", fontWeight: "700" }}
+                sx={{ color: "#12CD7E", fontSize: "18px", fontWeight: "700" }}
               >
                 Onboarding of Events & Communities
               </Box>
-              <Box sx={{ color: "white" }}>
+              <Box sx={{ color: "#112121" }}>
                 Wibhoo aims to bring together diverse communities and vibrant
                 events, fostering connections and collaboration.
               </Box>
@@ -350,11 +352,11 @@ const Communities = () => {
             >
               <Box sx={{ color: "#111917", fontSize: "3em" }}>10+</Box>
               <Box
-                sx={{ color: "#9cf5b8", fontSize: "18px", fontWeight: "700" }}
+                sx={{ color: "#12CD7E", fontSize: "18px", fontWeight: "700" }}
               >
                 Events in Collaboration
               </Box>
-              <Box sx={{ color: "white" }}>
+              <Box sx={{ color: "#112121" }}>
                 Through strategic partnerships, Wibhoo will host enriching
                 events that promote sustainability, creativity, and social
                 impact.
@@ -370,11 +372,11 @@ const Communities = () => {
             >
               <Box sx={{ color: "#111917", fontSize: "3em" }}>10+</Box>
               <Box
-                sx={{ color: "#9cf5b8", fontSize: "18px", fontWeight: "700" }}
+                sx={{ color: "#12CD7E", fontSize: "18px", fontWeight: "700" }}
               >
                 Volunteer Programs
               </Box>
-              <Box sx={{ color: "white" }}>
+              <Box sx={{ color: "#112121" }}>
                 Wibhoo will organize volunteer programs focused on environmental
                 conservation, social welfare, and community development.
               </Box>
@@ -389,11 +391,11 @@ const Communities = () => {
             >
               <Box sx={{ color: "#111917", fontSize: "3em" }}>20+</Box>
               <Box
-                sx={{ color: "#9cf5b8", fontSize: "18px", fontWeight: "700" }}
+                sx={{ color: "#12CD7E", fontSize: "18px", fontWeight: "700" }}
               >
                 Workshops in Collaboration
               </Box>
-              <Box sx={{ color: "white" }}>
+              <Box sx={{ color: "#112121" }}>
                 Join hands with experts and thought leaders to conduct workshops
                 on sustainable living, wellness, art, and personal development.
               </Box>
@@ -415,7 +417,7 @@ const Communities = () => {
         </Box>
       </Box>
       {/* <Divider
-        sx={{ height: "1px", backgroundColor: "#9cf5b8" }}
+        sx={{ height: "1px", backgroundColor: "#12CD7E" }}
         variant="fullWidth"
       /> */}
     </Box>

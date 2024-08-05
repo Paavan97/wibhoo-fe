@@ -12,7 +12,7 @@ import Postercrousel1 from "../assets/Places/1.png";
 import Postercrousel2 from "../assets/Places/2.png";
 import Postercrousel3 from "../assets/Places/3.png";
 import Postercrousel4 from "../assets/Places/4.png";
-import Poatry1 from "../assets/Places/shine (2)m.png";
+import Poatry1 from "../assets/Places/10.png";
 import Top1 from "/images/Top1.png";
 import Bottom1 from "/images/Bottom1.png";
 
@@ -118,7 +118,7 @@ const Places = () => {
           </Box>
           <Typography
             sx={{
-              color: "#FF5757",
+              color: "#FF6364",
               fontSize: { xs: "1em", md: "1.2em" },
               margin: "0px",
 
@@ -152,14 +152,14 @@ const Places = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          color: "white",
+          color: "#112121",
           gap: "20px",
         }}
       >
         <Typography
           sx={{
             fontSize: "2em",
-            color: "#9cf5b8",
+            color: "#12CD7E",
             textAlign: "center",
           }}
         >
@@ -187,7 +187,7 @@ const Places = () => {
                 variant="body1"
                 sx={{
                   fontSize: "12px",
-                  backgroundColor: "#9cf5b8",
+                  backgroundColor: "#12CD7E",
                   color: "#2F4F4F",
                   paddingX: "8px",
                   paddingY: "5px",
@@ -207,7 +207,7 @@ const Places = () => {
             marginTop: "20px",
             display: "flex",
             alignItems: "center",
-            backgroundColor: "white",
+            backgroundColor: "#112121",
             borderRadius: "10px",
             padding: "5px",
           }}
@@ -264,9 +264,9 @@ const Places = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            color: "white",
+            color: "#112121",
             gap: "20px",
-            backgroundColor: "#FF5757",
+            backgroundColor: "#FF6364",
           }}
         >
           <Typography

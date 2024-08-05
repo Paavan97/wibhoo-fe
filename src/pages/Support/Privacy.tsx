@@ -46,14 +46,14 @@ const Privacy = () => {
         >
           <Typography
             variant="h3"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 3 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 3 }}
           >
             Privacy Policy
           </Typography>
           <br />
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             At wibhoo, accessible from https://www.wibhoo.in, one of our main
             priorities is the privacy of our visitors. This Privacy Policy
@@ -62,14 +62,14 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             If you have additional questions or require more information about
             our Privacy Policy, do not hesitate to contact us.
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             This Privacy Policy applies only to our online activities and is
             valid for visitors to our website with regards to the information
@@ -79,27 +79,27 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Consent
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             By using our website, you hereby consent to our Privacy Policy and
             agree to its terms.
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Information we collect{" "}
           </Typography>
           <br />
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             The personal information that you are asked to provide, and the
             reasons why you are asked to provide it, will be made clear to you
@@ -107,7 +107,7 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             If you contact us directly, we may receive additional information
             about you such as your name, email address, phone number, the
@@ -116,7 +116,7 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             When you register for an Account, we may ask for your contact
             information, including items such as name, company name, address,
@@ -124,20 +124,20 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             How we use your information
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We use the information we collect in various ways, including to:
           </Typography>
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "19px",
@@ -159,13 +159,13 @@ const Privacy = () => {
           </ul>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Log Files
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             wibhoo follows a standard procedure of using log files. These files
             log visitors when they visit websites. All hosting companies do this
@@ -180,13 +180,13 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Cookies and Web Beacons
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Like any other website, wibhoo uses 'cookies'. These cookies are
             used to store information including visitors' preferences, and the
@@ -197,20 +197,20 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Advertising Partners Privacy Policies
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             You may consult this list to find the Privacy Policy for each of the
             advertising partners of wibhoo.
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Third-party ad servers or ad networks uses technologies like
             cookies, JavaScript, or Web Beacons that are used in their
@@ -222,20 +222,20 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Note that wibhoo has no access to or control over these cookies that
             are used by third-party advertisers.
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Third Party Privacy Policies
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             wibhoo's Privacy Policy does not apply to other advertisers or
             websites. Thus, we are advising you to consult the respective
@@ -245,7 +245,7 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             You can choose to disable cookies through your individual browser
             options. To know more detailed information about cookie management
@@ -254,13 +254,13 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             CCPA Privacy Rights (Do Not Sell My Personal Information)
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Under the CCPA, among other rights, California consumers have the
             right to:
@@ -268,7 +268,7 @@ const Privacy = () => {
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -294,13 +294,13 @@ const Privacy = () => {
           </ul>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             GDPR Data Protection Rights
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We would like to make sure you are fully aware of all of your data
             protection rights. Every user is entitled to the following:
@@ -308,7 +308,7 @@ const Privacy = () => {
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -349,14 +349,14 @@ const Privacy = () => {
           </ul>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 10 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 10 }}
           >
             Children's Information
           </Typography>
           <br />
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Another part of our priority is adding protection for children while
             using the internet. We encourage parents and guardians to observe,
@@ -364,7 +364,7 @@ const Privacy = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Wibhoo does not knowingly collect any Personal Identifiable
             Information from children under the age of 13. If you think that

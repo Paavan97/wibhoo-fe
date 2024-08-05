@@ -6,8 +6,8 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import Home1 from "../assets/Home/Poatry (3).png";
-import communitycentric from "../assets/Home/Poatry (5).png";
+import Home1 from "../assets/Home/1.png";
+import communitycentric from "../assets/Home/9.png";
 import Carousel from "../views/home/Carousel";
 import MobileCarousel from "../views/home/MobileCarousel";
 import Top1 from "/images/Top1.png";
@@ -68,7 +68,7 @@ const Home = () => {
           </Box>
           <Typography
             sx={{
-              color: "#FF5757",
+              color: "#FF6364",
               fontSize: { xs: "1.2em", md: "2em" },
               margin: "0px",
               textAlign: { xs: "center", md: "left" },
@@ -106,10 +106,10 @@ const Home = () => {
           gap: "20px",
         }}
       >
-        <Typography sx={{ color: "#9cf5b8", fontSize: "3em" }}>
+        <Typography sx={{ color: "#12CD7E", fontSize: "3em" }}>
           Localizing Conscious Living
         </Typography>
-        <Typography variant="h6" sx={{ color: "white" }}>
+        <Typography variant="h6" sx={{ color: "#112121" }}>
           At Wibhoo, we prioritize making conscious living easy and accessible
           by emphasizing local solutions. This not only helps boost the local
           economy but also reduces negative environmental impacts.
@@ -140,10 +140,10 @@ const Home = () => {
           gap: "20px",
         }}
       >
-        <Typography sx={{ color: "#9cf5b8", fontSize: "3em" }}>
+        <Typography sx={{ color: "#12CD7E", fontSize: "3em" }}>
           Explore the ways
         </Typography>
-        <Typography variant="h6" sx={{ color: "white" }}>
+        <Typography variant="h6" sx={{ color: "#112121" }}>
           Explore Planet-Friendly Choices, Practical Services, Beautiful
           Getaways, and Collaborative Networks
         </Typography>
@@ -170,7 +170,7 @@ const Home = () => {
           justifyContent: "center",
           height: "auto",
           alignItems: "center",
-          backgroundColor: "#9cf5b8",
+          backgroundColor: "#12CD7E",
           gap: "50px",
           flexDirection: { md: "row", xs: "column" },
         }}
@@ -237,7 +237,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Being Hyperlocal
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 Prioritizing local businesses and artisans to stimulate economic
                 growth.
               </Box>
@@ -256,7 +256,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Collaborative Engagement
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 Cultivating a network of like-minded individuals to drive
                 collective action for positive change.
               </Box>
@@ -275,7 +275,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Environmental Impact
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 Emphasizing sustainable practices to minimize ecological
                 footprints.
               </Box>
@@ -294,7 +294,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Holistic Well-being
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 Fostering a culture of mindfulness, health, and social
                 responsibility.
               </Box>
@@ -310,14 +310,14 @@ const Home = () => {
           >
             <Box
               sx={{
-                color: "#9cf5b8",
+                color: "#12CD7E",
                 fontSize: "20px",
                 fontWeight: "500",
               }}
             >
               But How
             </Box>
-            <Box sx={{ width: "40px", fontSize: "30px", color: "#9cf5b8" }}>
+            <Box sx={{ width: "40px", fontSize: "30px", color: "#12CD7E" }}>
               <i className="fa-solid fa-arrow-right"></i>
             </Box>
           </Box>
@@ -349,7 +349,7 @@ const Home = () => {
           gap: "85px",
         }}
       >
-        <Box sx={{ fontSize: "2em", color: "#9cf5b8" }}>
+        <Box sx={{ fontSize: "2em", color: "#12CD7E" }}>
           Upcoming Sustainable Events and Workshops
         </Box>
         <Box sx={{ color: "#6f6f6f", fontSize: "18px" }}>
@@ -373,7 +373,7 @@ const Home = () => {
       <Box
         sx={{
           display: "flex",
-          backgroundColor: "#FF5757",
+          backgroundColor: "#FF6364",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
@@ -397,7 +397,7 @@ const Home = () => {
             justifyContent: "center",
             alignItems: "center",
             padding: "20px",
-            backgroundColor: "#FF5757",
+            backgroundColor: "#FF6364",
             marginTop: "30px",
             // gap: "1px",
           }}
@@ -449,10 +449,10 @@ const Home = () => {
                   src={item.imgSrc}
                 />
               </Box>
-              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+              <Box sx={{ color: "#12CD7E", fontSize: "20px" }}>
                 {item.value}
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 {item.description}
               </Box>
             </Grid>
@@ -485,14 +485,14 @@ const Home = () => {
       >
         <Box
           sx={{
-            color: "#9cf5b8",
+            color: "#12CD7E",
             fontSize: "2.5em",
             marginTop: "60px",
           }}
         >
           Join the Tribe - It's Free!
         </Box>
-        <Box sx={{ color: "white", fontSize: "18px" }}>
+        <Box sx={{ color: "#112121", fontSize: "18px" }}>
           Sign up for budget-friendly offers, trendy arrivals, fabulous events,
           and outstanding workshops.
         </Box>
@@ -517,9 +517,9 @@ const Home = () => {
               fontSize: "16px",
               borderRadius: "5px",
               width: { xs: "80%", md: "500px" },
-              border: "1px solid #9cf5b8",
+              border: "1px solid #12CD7E",
               outline: "none",
-              backgroundColor: "white",
+              backgroundColor: "#112121",
             }}
           />
           <Button

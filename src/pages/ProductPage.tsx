@@ -57,12 +57,12 @@ const ProductPage = () => {
       {productsStatus === "succeeded" && (
         <>
           <Box sx={{ padding: "40px" }}>
-            <Typography variant="h4" sx={{ color: "#9cf5b8", marginBottom: 2 }}>
+            <Typography variant="h4" sx={{ color: "#12CD7E", marginBottom: 2 }}>
               {category}
             </Typography>
             <Typography
               variant="body1"
-              sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+              sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
             >
               Discover our range of {category} products.
             </Typography>
@@ -82,7 +82,7 @@ const ProductPage = () => {
           <Box
             sx={{
               display: "flex",
-              backgroundColor: "#9cf5b8",
+              backgroundColor: "#12CD7E",
               justifyContent: "center",
               alignItems: "center",
               width: "100%",
@@ -186,7 +186,7 @@ const ProductPage = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          color: "white",
+          color: "#112121",
           gap: "20px",
           marginTop: "80px",
         }}
@@ -199,7 +199,7 @@ const ProductPage = () => {
               variant="body1"
               sx={{
                 fontSize: "12px",
-                backgroundColor: "#9cf5b8",
+                backgroundColor: "#12CD7E",
                 color: "#2F4F4F",
                 paddingX: "8px",
                 paddingY: "5px",
@@ -217,7 +217,7 @@ const ProductPage = () => {
             marginTop: "20px",
             display: "flex",
             alignItems: "center",
-            backgroundColor: "white",
+            backgroundColor: "#112121",
             borderRadius: "10px",
             padding: "5px",
           }}

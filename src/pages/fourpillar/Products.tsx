@@ -103,7 +103,7 @@ const Products = () => {
             >
               <Box
                 sx={{
-                  color: "#9cf5b8",
+                  color: "#12CD7E",
                   fontSize: { md: "3em", xs: "4em" },
                   margin: "0px",
                   marginTop: "100px",
@@ -132,7 +132,7 @@ const Products = () => {
               </Box>
               <Typography
                 sx={{
-                  color: "white",
+                  color: "#112121",
                   fontSize: { xs: "1.5em", md: "1.2em" },
                   margin: "0px",
                   textAlign: { xs: "center", md: "left" },
@@ -161,7 +161,7 @@ const Products = () => {
       <Box sx={{ marginTop: "100px" }}>
         <Box
           sx={{
-            color: "#9cf5b8",
+            color: "#12CD7E",
             width: "100%",
             fontSize: "3em",
             margin: "0px",
@@ -190,7 +190,7 @@ const Products = () => {
       <Box
         sx={{
           display: "flex",
-          backgroundColor: "#FF5757",
+          backgroundColor: "#FF6364",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
@@ -214,7 +214,7 @@ const Products = () => {
             justifyContent: "center",
             alignItems: "center",
             padding: "20px",
-            backgroundColor: "#FF5757",
+            backgroundColor: "#FF6364",
             marginTop: "30px",
             // gap: "1px",
           }}
@@ -236,13 +236,13 @@ const Products = () => {
               <Box>
                 <FontAwesomeIcon
                   icon={item.icon}
-                  style={{ fontSize: "4em", color: "#9cf5b8" }}
+                  style={{ fontSize: "4em", color: "#12CD7E" }}
                 />
               </Box>
-              <Box sx={{ color: "#9cf5b8", fontSize: "20px" }}>
+              <Box sx={{ color: "#12CD7E", fontSize: "20px" }}>
                 {item.value}
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 {item.description}
               </Box>
             </Grid>

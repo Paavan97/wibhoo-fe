@@ -117,12 +117,12 @@ const Checkout: React.FC = () => {
           style={{ width: "100%" }}
         />
       </Box>
-      <Container sx={{ minWidth: "100%", bgcolor: "#9cf5b8", p: 4 }}>
+      <Container sx={{ minWidth: "100%", bgcolor: "#12CD7E", p: 4 }}>
         <Grid container sx={{ px: { md: 10, xs: 0 } }} spacing={4}>
           <Grid item xs={12} md={5}>
             <Box
               mt={3}
-              bgcolor="white"
+              bgcolor="#112121"
               sx={{ px: { md: 6, xs: 0 }, borderRadius: "20px" }}
             >
               <Box borderBottom={1} borderColor="grey.200" p={2}>
@@ -209,7 +209,7 @@ const Checkout: React.FC = () => {
                   <Button
                     component={Link}
                     to="/payment"
-                    sx={{ backgroundColor: "#111917", color: "#9cf5b8" }}
+                    sx={{ backgroundColor: "#111917", color: "#12CD7E" }}
                     variant="contained"
                     color="primary"
                     fullWidth
@@ -237,7 +237,7 @@ const Checkout: React.FC = () => {
               p={3}
               mt={3}
               sx={{ px: { md: 6, xs: 4 }, borderRadius: "20px" }}
-              bgcolor="white"
+              bgcolor="#112121"
             >
               <Typography variant="h5" gutterBottom>
                 Personal Information
@@ -329,7 +329,7 @@ const Checkout: React.FC = () => {
                 <Button variant="outlined">Reset</Button>
                 <Button
                   variant="contained"
-                  sx={{ backgroundColor: "#111917", color: "#9cf5b8" }}
+                  sx={{ backgroundColor: "#111917", color: "#12CD7E" }}
                 >
                   Add Address
                 </Button>

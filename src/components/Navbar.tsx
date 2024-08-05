@@ -300,7 +300,7 @@ export default function Navbar() {
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton sx={{ color: "white" }} onClick={handleSearchClick}>
+            <IconButton sx={{ color: "#112121" }} onClick={handleSearchClick}>
               <SearchIcon />
             </IconButton>
             <IconButton
@@ -381,7 +381,7 @@ export default function Navbar() {
         sx={{
           "& .MuiDrawer-paper": {
             backgroundColor: "#111917",
-            color: "white",
+            color: "#112121",
             width: { xs: "80%", sm: "80%", md: 500 },
             overflowX: "hidden",
           },
@@ -391,7 +391,7 @@ export default function Navbar() {
         {isMobile ? (
           <Box
             sx={{
-              backgroundColor: showSubMenu ? "#9cf5b8" : "",
+              backgroundColor: showSubMenu ? "#12CD7E" : "",
               width: "100%",
               height: "100%",
             }}
@@ -427,10 +427,10 @@ export default function Navbar() {
                       component={Link}
                       to={`category/${item.slug}`}
                       sx={{
-                        color: "black",
+                        color: "white",
                         "&:hover": {
-                          backgroundColor: "#9cf5b8", // Green background on hover
-                          color: "white", // White text color on hover
+                          backgroundColor: "#12CD7E", // Green background on hover
+                          color: "#112121", // White text color on hover
                         },
                       }}
                       onClick={() => {
@@ -476,10 +476,10 @@ export default function Navbar() {
                         textAlign: "center",
                         marginTop: "20px",
                         backgroundColor:
-                          selectedMenu === menu.name ? "#9cf5b8" : "inherit",
-                        color: selectedMenu === menu.name ? "black" : "inherit",
+                          selectedMenu === menu.name ? "#12CD7E" : "inherit",
+                        color: selectedMenu === menu.name ? "white" : "inherit",
                         "&:hover": {
-                          backgroundColor: "#9cf5b8",
+                          backgroundColor: "#12CD7E",
                           color: "black",
                         },
                       }}
@@ -493,7 +493,7 @@ export default function Navbar() {
           </Box>
         ) : (
           <Grid container sx={{ height: "100%" }}>
-            <Grid item xs={6} sx={{ backgroundColor: "#111917" }}>
+            <Grid item xs={6} sx={{ backgroundColor: "#12CD7E" }}>
               <List sx={{ textAlign: "center" }}>
                 <Box
                   sx={{
@@ -525,11 +525,11 @@ export default function Navbar() {
                       textAlign: "center",
                       marginTop: "20px",
                       backgroundColor:
-                        selectedMenu === menu.name ? "#9cf5b8" : "inherit",
-                      color: selectedMenu === menu.name ? "black" : "inherit",
+                        selectedMenu === menu.name ? "#12CD7E " : "inherit",
+                      color: selectedMenu === menu.name ? "white" : "inherit",
                       "&:hover": {
-                        backgroundColor: "#9cf5b8",
-                        color: "black",
+                        backgroundColor: "#12CD7E",
+                        color: "white",
                       },
                     }}
                   >
@@ -538,7 +538,7 @@ export default function Navbar() {
                 ))}
               </List>
             </Grid>
-            <Grid item xs={6} sx={{ backgroundColor: "#9cf5b8", p: 2 }}>
+            <Grid item xs={6} sx={{ backgroundColor: "#E2F4DD", p: 2 }}>
               {selectedMenu === "Shop" && (
                 <>
                   <Typography variant="body2" sx={{ mt: 8, color: "black" }}>
@@ -558,7 +558,7 @@ export default function Navbar() {
                         sx={{
                           color: "black",
                           "&:hover": {
-                            backgroundColor: "#9cf5b8", // Green background on hover
+                            backgroundColor: "#12CD7E", // Green background on hover
                             color: "white", // White text color on hover
                           },
                         }}
