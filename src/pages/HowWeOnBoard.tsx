@@ -27,10 +27,10 @@ const HowWeOnBoard = () => {
           padding: "0px 20px",
         }}
       >
-        <Box sx={{ color: "#9cf5b8", fontSize: "2em" }}>
+        <Box sx={{ color: "#12CD7E", fontSize: "2em" }}>
           What do we see before onboarding
         </Box>
-        <Box sx={{ color: "white", fontSize: "18px", lineHeight: "2" }}>
+        <Box sx={{ color: "#112121", fontSize: "18px", lineHeight: "2" }}>
           Before onboarding any options, Wibhoo conducts a rigorous vetting
           process to ensure authenticity and alignment with our values. We
           analyze multiple data points and verify claims to validate their
@@ -65,7 +65,7 @@ const HowWeOnBoard = () => {
             display: "flex",
             gap: "50px",
             alignItems: "center",
-            background: "#9cf5b8",
+            background: "#12CD7E",
             flexDirection: { md: "row", xs: "column-reverse" },
             padding: "20px",
           }}
@@ -108,7 +108,7 @@ const HowWeOnBoard = () => {
                 >
                   Certification Verification
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "white" }}>
+                <Box sx={{ fontSize: "18px", color: "#112121" }}>
                   We verify certifications claimed by partners to validate their
                   compliance with sustainability standards.
                 </Box>
@@ -126,7 +126,7 @@ const HowWeOnBoard = () => {
                 >
                   Supply Chain Transparency
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "white" }}>
+                <Box sx={{ fontSize: "18px", color: "#112121" }}>
                   We assess the transparency of partners' supply chains to
                   ensure ethical sourcing and production practices.
                 </Box>
@@ -144,7 +144,7 @@ const HowWeOnBoard = () => {
                 >
                   Environmental Impact Assessment
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "white" }}>
+                <Box sx={{ fontSize: "18px", color: "#112121" }}>
                   We evaluate the environmental impact of partners' products or
                   services, considering factors such as carbon footprint, waste
                   generation, and resource consumption.
@@ -163,7 +163,7 @@ const HowWeOnBoard = () => {
                 >
                   Social Responsibility Initiatives
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "white" }}>
+                <Box sx={{ fontSize: "18px", color: "#112121" }}>
                   We examine partners' initiatives aimed at promoting social
                   welfare, supporting local communities, and empowering
                   marginalized groups.
@@ -182,7 +182,7 @@ const HowWeOnBoard = () => {
                 >
                   Product or Service Quality
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "white" }}>
+                <Box sx={{ fontSize: "18px", color: "#112121" }}>
                   We assess the quality and performance of products or services
                   offered by partners to ensure they meet our standards of
                   excellence.
@@ -201,7 +201,7 @@ const HowWeOnBoard = () => {
                 >
                   Customer Feedback and Reviews
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "white" }}>
+                <Box sx={{ fontSize: "18px", color: "#112121" }}>
                   We consider feedback and reviews from customers to gauge the
                   satisfaction level and overall reputation of partners.
                 </Box>
@@ -225,7 +225,7 @@ const HowWeOnBoard = () => {
         </Box>
       </Box>
       <Box sx={{ marginTop: "100px", textAlign: "center" }}>
-        <Box sx={{ fontSize: "2em", color: "#9cf5b8" }}>
+        <Box sx={{ fontSize: "2em", color: "#12CD7E" }}>
           For the vetting process, we scrutinize partners based on a set of key
           criteria to ensure alignment with Wibhoo's mission and values:
         </Box>
@@ -291,7 +291,7 @@ const HowWeOnBoard = () => {
                     }}
                     src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/09d34d66-da21-4e2b-a01f-7cbd7cc8cef6.svg"
                   />
-                  <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                  <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                     Environment Impect
                   </Box>
                   <Box
@@ -299,7 +299,7 @@ const HowWeOnBoard = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "25px",
-                      color: "white",
+                      color: "#112121",
                       fontSize: "18px",
                     }}
                   >
@@ -390,7 +390,7 @@ const HowWeOnBoard = () => {
                     }}
                     src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/70c389a1-5cd7-4ca9-9b49-3ad82e85d233.svg"
                   />
-                  <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                  <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                     Workers Wellbeing
                   </Box>
                   <Box
@@ -398,7 +398,7 @@ const HowWeOnBoard = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "25px",
-                      color: "white",
+                      color: "#112121",
                       fontSize: "18px",
                     }}
                   >
@@ -471,7 +471,7 @@ const HowWeOnBoard = () => {
                     }}
                     src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/7d091a32-a977-4ea8-aa8e-76ec010c7bdc.svg"
                   />
-                  <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                  <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                     Healthy Living
                   </Box>
                   <Box
@@ -479,7 +479,7 @@ const HowWeOnBoard = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "25px",
-                      color: "white",
+                      color: "#112121",
                       fontSize: "18px",
                     }}
                   >
@@ -559,7 +559,7 @@ const HowWeOnBoard = () => {
                     }}
                     src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/0ca4732e-80ba-404d-9f39-5c7d62ce63c0.svg"
                   />
-                  <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                  <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                     Animal Welfare
                   </Box>
                   <Box
@@ -567,7 +567,7 @@ const HowWeOnBoard = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "25px",
-                      color: "white",
+                      color: "#112121",
                       fontSize: "18px",
                     }}
                   >
@@ -646,7 +646,7 @@ const HowWeOnBoard = () => {
                     }}
                     src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/0d4ccaec-7004-4237-9edd-cdeafbc572cf.svg"
                   />
-                  <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                  <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                     Social Welfare
                   </Box>
                   <Box
@@ -654,7 +654,7 @@ const HowWeOnBoard = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "25px",
-                      color: "white",
+                      color: "#112121",
                       fontSize: "18px",
                     }}
                   >

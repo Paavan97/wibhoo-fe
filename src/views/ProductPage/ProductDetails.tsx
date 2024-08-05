@@ -64,7 +64,7 @@ interface Product {
 //     },
 //   ],
 //   colors: [
-//     { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
+//     { name: "#112121", class: "bg-white", selectedClass: "ring-gray-400" },
 //     { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
 //     { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
 //   ],
@@ -141,14 +141,14 @@ export default function ProductDetail() {
           display: "flex",
           justifyContent: "center",
           alignItems: "cneter",
-          backgroundColor: "#9cf5b8",
+          backgroundColor: "#12CD7E",
         }}
       >
         <Box
           mt={6}
           mb={6}
           px={{ md: 10, xs: 5 }}
-          bgcolor="white"
+          bgcolor="#112121"
           borderRadius="20px"
           width="70%"
         >

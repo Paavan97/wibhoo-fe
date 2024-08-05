@@ -102,7 +102,7 @@ const Service = () => {
             >
               <Box
                 sx={{
-                  color: "#9cf5b8",
+                  color: "#12CD7E",
                   fontSize: { md: "3em", xs: "2.7em" },
                   margin: "0px",
                   marginTop: "100px",
@@ -114,7 +114,7 @@ const Service = () => {
 
               <Typography
                 sx={{
-                  color: "white",
+                  color: "#112121",
                   fontSize: { xs: "1.5em", md: "1.2em" },
                   margin: "0px",
                   width: "70%",
@@ -144,7 +144,7 @@ const Service = () => {
       <Box sx={{ marginTop: "100px" }}>
         <Box
           sx={{
-            color: "#9cf5b8",
+            color: "#12CD7E",
             width: "100%",
             fontSize: "3em",
             margin: "0px",
@@ -177,7 +177,7 @@ const Service = () => {
           justifyContent: "center",
           height: "auto",
           alignItems: "center",
-          backgroundColor: "#9cf5b8",
+          backgroundColor: "#12CD7E",
           gap: { md: "50px", xs: "0px" },
           flexDirection: { md: "row", xs: "column" },
         }}
@@ -243,7 +243,7 @@ const Service = () => {
               </Box>
               <Typography
                 sx={{
-                  color: "white",
+                  color: "#112121",
                   fontSize: { xs: "1.5em", md: "1.2em" },
                   margin: "0px",
                   textAlign: { xs: "center", md: "left" },
@@ -321,7 +321,7 @@ const Service = () => {
       <Box
         sx={{
           display: "flex",
-          backgroundColor: "#FF5757",
+          backgroundColor: "#FF6364",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
@@ -345,7 +345,7 @@ const Service = () => {
             justifyContent: "center",
             alignItems: "center",
             padding: "20px",
-            backgroundColor: "#FF5757",
+            backgroundColor: "#FF6364",
             marginTop: "30px",
             // gap: "1px",
           }}
@@ -367,15 +367,15 @@ const Service = () => {
               <Box>
                 <FontAwesomeIcon
                   icon={item.icon}
-                  style={{ fontSize: "4em", color: "#9cf5b8" }}
+                  style={{ fontSize: "4em", color: "#12CD7E" }}
                 />
               </Box>
               <Box
-                sx={{ color: "#9cf5b8", fontSize: { md: "25px", sm: "20px" } }}
+                sx={{ color: "#12CD7E", fontSize: { md: "25px", sm: "20px" } }}
               >
                 {item.value}
               </Box>
-              <Box sx={{ color: "white", fontSize: "18px" }}>
+              <Box sx={{ color: "#112121", fontSize: "18px" }}>
                 {item.description}
               </Box>
             </Grid>

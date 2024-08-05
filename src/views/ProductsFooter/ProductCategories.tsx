@@ -99,9 +99,9 @@ const ProductCategories = () => {
                 variant="contained"
                 sx={{
                   backgroundColor: "#111917",
-                  color: "#9cf5b8",
+                  color: "#12CD7E",
                   "&:hover": {
-                    backgroundColor: "white",
+                    backgroundColor: "#112121",
                     color: "#111917",
                   },
                 }}

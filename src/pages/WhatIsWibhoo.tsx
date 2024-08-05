@@ -57,7 +57,7 @@ const WhatIsWibhoo = () => {
           flexDirection: "column",
           width: "90%",
           // padding: "20px",
-          color: "white",
+          color: "#112121",
 
           borderRadius: "20px",
           gap: "30px",
@@ -101,7 +101,7 @@ const WhatIsWibhoo = () => {
               gap: "50px",
               display: "flex",
               flexDirection: "column",
-              backgroundColor: "#9cf5b8",
+              backgroundColor: "#12CD7E",
             }}
           >
             <Box sx={{ marginTop: "10px", padding: "20px" }}>
@@ -201,7 +201,7 @@ const WhatIsWibhoo = () => {
           </Box>
           <Box
             sx={{
-              color: "white",
+              color: "#112121",
               fontSize: "20px",
               lineHeight: 2,
               padding: "20px",
@@ -216,14 +216,16 @@ const WhatIsWibhoo = () => {
             satisfying life.
           </Box>
           <Box sx={{ display: "flex", gap: "40px" }}>
-            <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+            <Box sx={{ fontSize: "40px", color: "#12CD7E" }}>
               <i className="fa-solid fa-atom"></i>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-              <Box sx={{ fontSize: "22px", fontWeight: "700", color: "white" }}>
+              <Box
+                sx={{ fontSize: "22px", fontWeight: "700", color: "#112121" }}
+              >
                 All-in-One Hub
               </Box>
-              <Box sx={{ fontSize: "20px", color: "white", lineHeight: 2 }}>
+              <Box sx={{ fontSize: "20px", color: "#112121", lineHeight: 2 }}>
                 Wibhoo serves as a comprehensive oasis where individuals can
                 find everything they need to lead a conscious and fulfilling
                 life. From sustainable products to holistic services, we strive
@@ -233,14 +235,16 @@ const WhatIsWibhoo = () => {
             </Box>
           </Box>
           <Box sx={{ display: "flex", gap: "40px" }}>
-            <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+            <Box sx={{ fontSize: "40px", color: "#12CD7E" }}>
               <i className="fa-solid fa-map-location-dot"></i>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-              <Box sx={{ fontSize: "22px", fontWeight: "700", color: "white" }}>
+              <Box
+                sx={{ fontSize: "22px", fontWeight: "700", color: "#112121" }}
+              >
                 Local Love
               </Box>
-              <Box sx={{ fontSize: "20px", color: "white", lineHeight: 2 }}>
+              <Box sx={{ fontSize: "20px", color: "#112121", lineHeight: 2 }}>
                 We're big fans of supporting local businesses and communities.
                 By prioritizing nearby vendors and artisans, we not only reduce
                 carbon emissions associated with transportation but also
@@ -251,14 +255,16 @@ const WhatIsWibhoo = () => {
             </Box>
           </Box>
           <Box sx={{ display: "flex", gap: "40px" }}>
-            <Box sx={{ fontSize: "40px", color: "#9cf5b8" }}>
+            <Box sx={{ fontSize: "40px", color: "#12CD7E" }}>
               <i className="fa-solid fa-dove"></i>
             </Box>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-              <Box sx={{ fontSize: "22px", fontWeight: "700", color: "white" }}>
+              <Box
+                sx={{ fontSize: "22px", fontWeight: "700", color: "#112121" }}
+              >
                 Artful Living
               </Box>
-              <Box sx={{ fontSize: "20px", color: "white", lineHeight: 2 }}>
+              <Box sx={{ fontSize: "20px", color: "#112121", lineHeight: 2 }}>
                 In conscious living, nurturing the creative spirit is not just
                 about artistic expression—it's about fostering deeper
                 connections with ourselves, each other, and the world around us.
@@ -276,7 +282,7 @@ const WhatIsWibhoo = () => {
       </Box>
       <Box
         sx={{
-          color: "white",
+          color: "#112121",
           display: "flex",
           flexDirection: "column",
           width: "100%",
@@ -369,7 +375,7 @@ const WhatIsWibhoo = () => {
                   }}
                   // src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/09d34d66-da21-4e2b-a01f-7cbd7cc8cef6.svg"
                 />
-                <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                   Environmental Impact
                 </Box>
                 <Box
@@ -377,7 +383,7 @@ const WhatIsWibhoo = () => {
                     display: "flex",
                     flexDirection: "column",
                     gap: "25px",
-                    color: "white",
+                    color: "#112121",
                     fontSize: "18px",
                   }}
                 >
@@ -449,7 +455,7 @@ const WhatIsWibhoo = () => {
                   }}
                   src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/0b982632-269e-4495-9531-179855eca08a.svg"
                 />
-                <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                   Economic Impact
                 </Box>
                 <Box
@@ -457,7 +463,7 @@ const WhatIsWibhoo = () => {
                     display: "flex",
                     flexDirection: "column",
                     gap: "25px",
-                    color: "white",
+                    color: "#112121",
                     fontSize: "18px",
                   }}
                 >
@@ -526,7 +532,7 @@ const WhatIsWibhoo = () => {
                   }}
                   // src="https://assets.softr-files.com/applications/c0ac6f53-6da2-478a-aad1-cae10656e61a/assets/7d091a32-a977-4ea8-aa8e-76ec010c7bdc.svg"
                 />
-                <Box sx={{ color: "#9cf5b8", fontSize: "22px" }}>
+                <Box sx={{ color: "#12CD7E", fontSize: "22px" }}>
                   Social Impact
                 </Box>
                 <Box
@@ -534,7 +540,7 @@ const WhatIsWibhoo = () => {
                     display: "flex",
                     flexDirection: "column",
                     gap: "25px",
-                    color: "white",
+                    color: "#112121",
                     fontSize: "18px",
                   }}
                 >
@@ -571,7 +577,7 @@ const WhatIsWibhoo = () => {
               style={{ width: "100%" }}
             />
           </Box>
-          <Box sx={{ backgroundColor: "#FF5757", padding: "20px 0px" }}>
+          <Box sx={{ backgroundColor: "#FF6364", padding: "20px 0px" }}>
             <Box>
               <Typography
                 sx={{

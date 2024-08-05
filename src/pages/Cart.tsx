@@ -84,7 +84,7 @@ const Cart: React.FC = () => {
           style={{ width: "100%" }}
         />
       </Box>
-      <Container sx={{ minWidth: "100%", bgcolor: "#9cf5b8", p: 4 }}>
+      <Container sx={{ minWidth: "100%", bgcolor: "#12CD7E", p: 4 }}>
         <Typography
           sx={{ px: { md: 16, xs: "0" } }}
           variant="h4"
@@ -94,7 +94,7 @@ const Cart: React.FC = () => {
           Cart
         </Typography>
         <Box sx={{ px: { md: 16, xs: "0" } }}>
-          <List sx={{ backgroundColor: "white", borderRadius: "20px" }}>
+          <List sx={{ backgroundColor: "#112121", borderRadius: "20px" }}>
             {products.map((product) => (
               <ListItem key={product.id} sx={{ py: 2 }}>
                 <ListItemAvatar>
@@ -195,7 +195,7 @@ const Cart: React.FC = () => {
                 component={Link}
                 to="/checkout"
                 variant="contained"
-                sx={{ mt: 2, backgroundColor: "#111917", color: "#9cf5b8" }}
+                sx={{ mt: 2, backgroundColor: "#111917", color: "#12CD7E" }}
                 href="#"
               >
                 Checkout

@@ -29,12 +29,12 @@ const UsePage = () => {
     >
       {selectedCategory && (
         <>
-          <Typography variant="h4" sx={{ color: "#9cf5b8", marginBottom: 2 }}>
+          <Typography variant="h4" sx={{ color: "#12CD7E", marginBottom: 2 }}>
             {selectedCategory.text}
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             {selectedCategory.description}
           </Typography>
@@ -70,7 +70,7 @@ const UsePage = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          color: "white",
+          color: "#112121",
           gap: "20px",
           marginTop: "80px",
         }}
@@ -91,13 +91,13 @@ const UsePage = () => {
         >
           {tags.map((tag, index) => {
             return (
-              // <Button key={index} sx={{ fontSize: '12px', backgroundColor:"#9cf5b8", color:'black', margin: '0.5em' }}>
+              // <Button key={index} sx={{ fontSize: '12px', backgroundColor:"#12CD7E", color:'black', margin: '0.5em' }}>
               <Typography
                 key={index}
                 variant="body1"
                 sx={{
                   fontSize: "12px",
-                  backgroundColor: "#9cf5b8",
+                  backgroundColor: "#12CD7E",
                   color: "#2F4F4F",
                   paddingX: "8px",
                   paddingY: "5px",
@@ -119,7 +119,7 @@ const UsePage = () => {
             marginTop: "20px",
             display: "flex",
             alignItems: "center",
-            backgroundColor: "white",
+            backgroundColor: "#112121",
             borderRadius: "10px",
             padding: "5px",
           }}

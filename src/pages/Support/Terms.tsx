@@ -46,14 +46,14 @@ const Terms = () => {
         >
           <Typography
             variant="h3"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 3 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 3 }}
           >
             Terms Of Service
           </Typography>
           <br />
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Welcome to wibhoo! <br /> <br /> ​These terms and conditions outline
             the rules and regulations for the use of WIBHOO's Website, located
@@ -78,13 +78,13 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Cookies
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We employ the use of cookies. By accessing wibhoo, you agreed to use
             cookies in agreement with the WIBHOO's Privacy Policy. Most
@@ -96,13 +96,13 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             License
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Unless otherwise stated, WIBHOO and/or its licensors own the
             intellectual property rights for all material on wibhoo. All
@@ -112,14 +112,14 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             You Must Not:
           </Typography>
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -132,13 +132,13 @@ const Terms = () => {
           </ul>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             This Agreement shall begin on the date hereof.
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Parts of this website offer an opportunity for users to post and
             exchange opinions and information in certain areas of the website.
@@ -153,7 +153,7 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             WIBHOO reserves the right to monitor all Comments and to remove any
             Comments which can be considered inappropriate, offensive or causes
@@ -161,14 +161,14 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             You warrant and represent that:
           </Typography>
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -195,7 +195,7 @@ const Terms = () => {
           </ul>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             You hereby grant WIBHOO a non-exclusive license to use, reproduce,
             edit and authorize others to use, reproduce and edit any of your
@@ -203,13 +203,13 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Hyperlinking to our Content
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             The following organizations may link to our Website without prior
             written approval:
@@ -217,7 +217,7 @@ const Terms = () => {
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -239,7 +239,7 @@ const Terms = () => {
           </ul>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             These organizations may link to our home page, to publications or to
             other Website information so long as the link: (a) is not in any way
@@ -249,7 +249,7 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We may consider and approve other link requests from the following
             types of organizations:
@@ -257,7 +257,7 @@ const Terms = () => {
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -275,7 +275,7 @@ const Terms = () => {
           </ul>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We will approve link requests from these organizations if we decide
             that: (a) the link would not make us look unfavorably to ourselves
@@ -286,7 +286,7 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             These organizations may link to our home page so long as the link:
             (a) is not in any way deceptive; (b) does not falsely imply
@@ -296,7 +296,7 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             If you are one of the organizations listed in paragraph 2 above and
             are interested in linking to our website, you must inform us by
@@ -308,14 +308,14 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Approved organizations may hyperlink to our Website as follows:
           </Typography>
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -331,20 +331,20 @@ const Terms = () => {
           </ul>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             No use of WIBHOO's logo or other artwork will be allowed for linking
             absent a trademark license agreement.
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             iFrames
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Without prior approval and written permission, you may not create
             frames around our Webpages that alter in any way the visual
@@ -352,13 +352,13 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Content Liability
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We shall not be hold responsible for any content that appears on
             your Website. You agree to protect and defend us against all claims
@@ -369,25 +369,25 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Your Privacy
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             Please read Privacy Policy
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Reservation of Rights
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We reserve the right to request that you remove all links or any
             particular link to our Website. You approve to immediately remove
@@ -398,13 +398,13 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Removal of links from our website
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             If you find any link on our Website that is offensive for any
             reason, you are free to contact and inform us any moment. We will
@@ -413,7 +413,7 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             We do not ensure that the information on this website is correct, we
             do not warrant its completeness or accuracy; nor do we promise to
@@ -422,13 +422,13 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="h4"
-            sx={{ color: "#9cf5b8", marginBottom: 2, marginTop: 7 }}
+            sx={{ color: "#12CD7E", marginBottom: 2, marginTop: 7 }}
           >
             Disclaimer
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             To the maximum extent permitted by applicable law, we exclude all
             representations, warranties and conditions relating to our website
@@ -437,7 +437,7 @@ const Terms = () => {
           <ul
             style={{
               listStyle: "circle",
-              color: "white",
+              color: "#112121",
               textAlign: isTablet ? "left" : "justify",
               lineHeight: 2,
               fontSize: "18px",
@@ -462,7 +462,7 @@ const Terms = () => {
           </ul>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             The limitations and prohibitions of liability set in this Section
             and elsewhere in this disclaimer: (a) are subject to the preceding
@@ -472,7 +472,7 @@ const Terms = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginBottom: 2, color: "white", lineHeight: 2 }}
+            sx={{ marginBottom: 2, color: "#112121", lineHeight: 2 }}
           >
             As long as the website and the information and services on the
             website are provided free of charge, we will not be liable for any

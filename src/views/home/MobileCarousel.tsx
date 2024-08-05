@@ -112,7 +112,7 @@ const descriptions = [
     title: "Practical Services",
     text: "Access sustainable services designed to simplify your eco-friendly routines.",
     image: two,
-    bgColor: "#FF5757",
+    bgColor: "#FF6364",
     bName: "Explore Services",
   },
   {
@@ -121,7 +121,7 @@ const descriptions = [
     title: "Places & Spaces",
     text: "Find sustainable destinations where you can connect & rejuvenate.",
     image: three,
-    bgColor: "#9cf5b8 ",
+    bgColor: "#12CD7E ",
     bName: "Discover Places",
   },
   {
@@ -177,7 +177,7 @@ const MobileCarousel = () => {
                       sx={{
                         textTransform: "uppercase",
                         textAlign: "center",
-                        color: "#9cf5b8",
+                        color: "#12CD7E",
                       }}
                     >
                       {desc.title}
@@ -187,7 +187,7 @@ const MobileCarousel = () => {
                       sx={{
                         paddingTop: "5px",
                         textAlign: "center",
-                        color: "white",
+                        color: "#112121",
                       }}
                     >
                       {desc.text}
@@ -201,7 +201,7 @@ const MobileCarousel = () => {
                         backgroundColor: "rgb(68, 222, 125)",
                         color: "black",
                         "&:hover": {
-                          backgroundColor: "white",
+                          backgroundColor: "#112121",
                         },
                       }}
                     >

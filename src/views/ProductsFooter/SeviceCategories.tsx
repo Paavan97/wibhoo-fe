@@ -123,7 +123,7 @@ const ServiceCategories = () => {
               </Typography>
               <Typography
                 variant="subtitle1"
-                color="white"
+                color="#112121"
                 sx={{ marginBottom: 2 }}
               >
                 {category.subtitle}
@@ -132,9 +132,9 @@ const ServiceCategories = () => {
                 variant="contained"
                 sx={{
                   backgroundColor: "#111917",
-                  color: "#9cf5b8",
+                  color: "#12CD7E",
                   "&:hover": {
-                    backgroundColor: "white",
+                    backgroundColor: "#112121",
                     color: "#111917",
                   },
                 }}
