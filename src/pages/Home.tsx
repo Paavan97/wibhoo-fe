@@ -237,7 +237,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Being Hyperlocal
               </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 Prioritizing local businesses and artisans to stimulate economic
                 growth.
               </Box>
@@ -256,7 +256,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Collaborative Engagement
               </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 Cultivating a network of like-minded individuals to drive
                 collective action for positive change.
               </Box>
@@ -275,7 +275,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Environmental Impact
               </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 Emphasizing sustainable practices to minimize ecological
                 footprints.
               </Box>
@@ -294,7 +294,7 @@ const Home = () => {
               <Box sx={{ color: "#111917", fontSize: "20px" }}>
                 Holistic Well-being
               </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 Fostering a culture of mindfulness, health, and social
                 responsibility.
               </Box>
@@ -452,7 +452,7 @@ const Home = () => {
               <Box sx={{ color: "#12CD7E", fontSize: "20px" }}>
                 {item.value}
               </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 {item.description}
               </Box>
             </Grid>

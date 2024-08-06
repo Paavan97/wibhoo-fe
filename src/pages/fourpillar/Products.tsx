@@ -234,15 +234,10 @@ const Products = () => {
               }}
             >
               <Box>
-                <FontAwesomeIcon
-                  icon={item.icon}
-                  style={{ fontSize: "4em", color: "#12CD7E" }}
-                />
+                <FontAwesomeIcon icon={item.icon} style={{ fontSize: "4em" }} />
               </Box>
-              <Box sx={{ color: "#12CD7E", fontSize: "20px" }}>
-                {item.value}
-              </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ fontSize: "20px" }}>{item.value}</Box>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 {item.description}
               </Box>
             </Grid>

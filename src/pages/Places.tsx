@@ -308,10 +308,12 @@ const Places = () => {
                   paddingX: "8px",
                   paddingY: "8px",
                   borderRadius: "15px",
-                  backgroundColor: `${currentPoster === 0 ? "#1C523A" : ""}`,
+                  backgroundColor: `${currentPoster === 0 ? "#0DE1B8" : ""}`,
                 }}
               >
-                <Typography variant="h5">{poster[0].title}</Typography>
+                <Typography color="white" variant="h5">
+                  {poster[0].title}
+                </Typography>
                 {currentPoster === 0 && (
                   <Typography variant="body1" sx={{ textAlign: "left" }}>
                     {poster[0].description}
@@ -327,10 +329,12 @@ const Places = () => {
                   paddingX: "8px",
                   paddingY: "8px",
                   borderRadius: "15px",
-                  backgroundColor: `${currentPoster === 1 ? "#1C523A" : ""}`,
+                  backgroundColor: `${currentPoster === 1 ? "#0DE1B8" : ""}`,
                 }}
               >
-                <Typography variant="h5">{poster[1].title}</Typography>
+                <Typography color="white" variant="h5">
+                  {poster[1].title}
+                </Typography>
                 {currentPoster === 1 && (
                   <Typography variant="body1" sx={{ textAlign: "left" }}>
                     {poster[1].description}
@@ -346,10 +350,12 @@ const Places = () => {
                   paddingX: "8px",
                   paddingY: "8px",
                   borderRadius: "15px",
-                  backgroundColor: `${currentPoster === 2 ? "#1C523A" : ""}`,
+                  backgroundColor: `${currentPoster === 2 ? "#0DE1B8" : ""}`,
                 }}
               >
-                <Typography variant="h5">{poster[2].title}</Typography>
+                <Typography color="white" variant="h5">
+                  {poster[2].title}
+                </Typography>
                 {currentPoster === 2 && (
                   <Typography variant="body1" sx={{ textAlign: "left" }}>
                     {poster[2].description}
@@ -365,10 +371,12 @@ const Places = () => {
                   paddingX: "8px",
                   paddingY: "8px",
                   borderRadius: "15px",
-                  backgroundColor: `${currentPoster === 3 ? "#1C523A" : ""}`,
+                  backgroundColor: `${currentPoster === 3 ? "#0DE1B8" : ""}`,
                 }}
               >
-                <Typography variant="h5">{poster[3].title}</Typography>
+                <Typography color="white" variant="h5">
+                  {poster[3].title}
+                </Typography>
                 {currentPoster === 3 && (
                   <Typography variant="body1" sx={{ textAlign: "left" }}>
                     {poster[3].description}

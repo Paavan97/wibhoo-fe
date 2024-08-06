@@ -243,7 +243,7 @@ const Service = () => {
               </Box>
               <Typography
                 sx={{
-                  color: "#112121",
+                  color: "white",
                   fontSize: { xs: "1.5em", md: "1.2em" },
                   margin: "0px",
                   textAlign: { xs: "center", md: "left" },
@@ -375,7 +375,7 @@ const Service = () => {
               >
                 {item.value}
               </Box>
-              <Box sx={{ color: "#112121", fontSize: "18px" }}>
+              <Box sx={{ color: "white", fontSize: "18px" }}>
                 {item.description}
               </Box>
             </Grid>

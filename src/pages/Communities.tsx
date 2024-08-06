@@ -66,9 +66,7 @@ const Communities = () => {
             >
               Meet & Join like-minded people
             </Box>
-            <Box
-              sx={{ fontSize: "18px", color: "#112121", textAlign: "center" }}
-            >
+            <Box sx={{ fontSize: "18px", color: "white", textAlign: "center" }}>
               Discover engaging events and vibrant communities that celebrate
               art, culture, and conscious living
             </Box>
@@ -96,7 +94,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Artistic Exploration
                 </Box>
-                <Box sx={{ color: "#112121", fontSize: "18px" }}>
+                <Box sx={{ color: "white", fontSize: "18px" }}>
                   Immerse yourself in a world of creativity with Exhibitions,
                   Workshops, and Performances
                 </Box>
@@ -115,7 +113,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Holistic Wellness
                 </Box>
-                <Box sx={{ color: "#112121", fontSize: "18px" }}>
+                <Box sx={{ color: "white", fontSize: "18px" }}>
                   Join wellness retreats that promote balance and harmony for
                   mind, body, and soul.
                 </Box>
@@ -134,7 +132,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Sustainable Living
                 </Box>
-                <Box sx={{ color: "#112121", fontSize: "18px" }}>
+                <Box sx={{ color: "white", fontSize: "18px" }}>
                   Engage in eco-friendly initiatives, and Social groups to
                   empower the community
                 </Box>
@@ -153,7 +151,7 @@ const Communities = () => {
                 <Box sx={{ fontSize: "20px", fontWeight: "700" }}>
                   Creative Collaboration
                 </Box>
-                <Box sx={{ color: "#112121", fontSize: "18px" }}>
+                <Box sx={{ color: "white", fontSize: "18px" }}>
                   Collaborate with artists, entrepreneurs, and changemakers to
                   drive innovation
                 </Box>
@@ -313,7 +311,7 @@ const Communities = () => {
           <Box sx={{ fontSize: "2.5em", color: "#111917" }}>
             Projection for a Better Community
           </Box>
-          <Box sx={{ fontSize: "16px", color: "#112121" }}>
+          <Box sx={{ fontSize: "16px", color: "white" }}>
             In a year, Wibhoo will potentially execute the following initiatives
           </Box>
           <Box
@@ -338,7 +336,7 @@ const Communities = () => {
               >
                 Onboarding of Events & Communities
               </Box>
-              <Box sx={{ color: "#112121" }}>
+              <Box sx={{ color: "white" }}>
                 Wibhoo aims to bring together diverse communities and vibrant
                 events, fostering connections and collaboration.
               </Box>
@@ -357,7 +355,7 @@ const Communities = () => {
               >
                 Events in Collaboration
               </Box>
-              <Box sx={{ color: "#112121" }}>
+              <Box sx={{ color: "white" }}>
                 Through strategic partnerships, Wibhoo will host enriching
                 events that promote sustainability, creativity, and social
                 impact.
@@ -377,7 +375,7 @@ const Communities = () => {
               >
                 Volunteer Programs
               </Box>
-              <Box sx={{ color: "#112121" }}>
+              <Box sx={{ color: "white" }}>
                 Wibhoo will organize volunteer programs focused on environmental
                 conservation, social welfare, and community development.
               </Box>
@@ -396,7 +394,7 @@ const Communities = () => {
               >
                 Workshops in Collaboration
               </Box>
-              <Box sx={{ color: "#112121" }}>
+              <Box sx={{ color: "white" }}>
                 Join hands with experts and thought leaders to conduct workshops
                 on sustainable living, wellness, art, and personal development.
               </Box>

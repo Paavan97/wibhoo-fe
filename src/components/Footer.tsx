@@ -1,5 +1,5 @@
 import { Box, Divider } from "@mui/material";
-import wibhooIcon from "../assets/dark 1.png";
+import wibhooIcon from "../assets/light 1.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
