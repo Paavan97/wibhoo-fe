@@ -119,7 +119,7 @@ const UsePage = () => {
             marginTop: "20px",
             display: "flex",
             alignItems: "center",
-            backgroundColor: "#112121",
+            backgroundColor: "white",
             borderRadius: "10px",
             padding: "5px",
           }}

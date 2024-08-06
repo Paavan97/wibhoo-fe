@@ -519,7 +519,7 @@ const Home = () => {
               width: { xs: "80%", md: "500px" },
               border: "1px solid #12CD7E",
               outline: "none",
-              backgroundColor: "#112121",
+              backgroundColor: "white",
             }}
           />
           <Button

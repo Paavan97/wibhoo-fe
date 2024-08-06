@@ -122,7 +122,7 @@ const Checkout: React.FC = () => {
           <Grid item xs={12} md={5}>
             <Box
               mt={3}
-              bgcolor="#112121"
+              bgcolor="#E2F4DD"
               sx={{ px: { md: 6, xs: 0 }, borderRadius: "20px" }}
             >
               <Box borderBottom={1} borderColor="grey.200" p={2}>
@@ -237,7 +237,7 @@ const Checkout: React.FC = () => {
               p={3}
               mt={3}
               sx={{ px: { md: 6, xs: 4 }, borderRadius: "20px" }}
-              bgcolor="#112121"
+              bgcolor="#E2F4DD"
             >
               <Typography variant="h5" gutterBottom>
                 Personal Information
