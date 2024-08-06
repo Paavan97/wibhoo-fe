@@ -148,7 +148,7 @@ export default function ProductDetail() {
           mt={6}
           mb={6}
           px={{ md: 10, xs: 5 }}
-          bgcolor="#112121"
+          bgcolor="#E2F4DD"
           borderRadius="20px"
           width="70%"
         >

@@ -38,6 +38,7 @@ const Wrapper = styled("div")({
 
 const Container = styled(Box)(() => ({
   height: "100%",
+  width: "100%",
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
@@ -179,7 +180,7 @@ const Carousel = () => {
                   {selected === desc.id && (
                     <Row
                       sx={{
-                        backgroundColor: "#111917",
+                        backgroundColor: "#E2F4DD",
                         borderRadius: "20px",
                         marginLeft: "20px",
                         marginBottom: "20px",

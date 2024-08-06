@@ -94,7 +94,7 @@ const Cart: React.FC = () => {
           Cart
         </Typography>
         <Box sx={{ px: { md: 16, xs: "0" } }}>
-          <List sx={{ backgroundColor: "#112121", borderRadius: "20px" }}>
+          <List sx={{ backgroundColor: "#E2F4DD", borderRadius: "20px" }}>
             {products.map((product) => (
               <ListItem key={product.id} sx={{ py: 2 }}>
                 <ListItemAvatar>

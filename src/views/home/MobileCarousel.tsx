@@ -166,7 +166,7 @@ const MobileCarousel = () => {
 
                   <Description
                     sx={{
-                      backgroundColor: "#111917",
+                      backgroundColor: "#E2F4DD",
                       borderRadius: "20px",
                       padding: "10px",
                     }}
