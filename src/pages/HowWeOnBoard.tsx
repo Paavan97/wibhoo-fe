@@ -108,7 +108,7 @@ const HowWeOnBoard = () => {
                 >
                   Certification Verification
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "#112121" }}>
+                <Box sx={{ fontSize: "18px", color: "white" }}>
                   We verify certifications claimed by partners to validate their
                   compliance with sustainability standards.
                 </Box>
@@ -126,7 +126,7 @@ const HowWeOnBoard = () => {
                 >
                   Supply Chain Transparency
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "#112121" }}>
+                <Box sx={{ fontSize: "18px", color: "white" }}>
                   We assess the transparency of partners' supply chains to
                   ensure ethical sourcing and production practices.
                 </Box>
@@ -144,7 +144,7 @@ const HowWeOnBoard = () => {
                 >
                   Environmental Impact Assessment
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "#112121" }}>
+                <Box sx={{ fontSize: "18px", color: "white" }}>
                   We evaluate the environmental impact of partners' products or
                   services, considering factors such as carbon footprint, waste
                   generation, and resource consumption.
@@ -163,7 +163,7 @@ const HowWeOnBoard = () => {
                 >
                   Social Responsibility Initiatives
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "#112121" }}>
+                <Box sx={{ fontSize: "18px", color: "white" }}>
                   We examine partners' initiatives aimed at promoting social
                   welfare, supporting local communities, and empowering
                   marginalized groups.
@@ -182,7 +182,7 @@ const HowWeOnBoard = () => {
                 >
                   Product or Service Quality
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "#112121" }}>
+                <Box sx={{ fontSize: "18px", color: "white" }}>
                   We assess the quality and performance of products or services
                   offered by partners to ensure they meet our standards of
                   excellence.
@@ -201,7 +201,7 @@ const HowWeOnBoard = () => {
                 >
                   Customer Feedback and Reviews
                 </Box>
-                <Box sx={{ fontSize: "18px", color: "#112121" }}>
+                <Box sx={{ fontSize: "18px", color: "white" }}>
                   We consider feedback and reviews from customers to gauge the
                   satisfaction level and overall reputation of partners.
                 </Box>
@@ -261,13 +261,13 @@ const HowWeOnBoard = () => {
                 <Box
                   sx={{
                     borderRadius: "15px",
-                    border: "1px solid gold",
+                    border: "2px solid gold",
                     width: "30px",
                     height: "30px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "gold",
+                    color: "#111917",
                   }}
                 >
                   1
@@ -360,13 +360,13 @@ const HowWeOnBoard = () => {
                 <Box
                   sx={{
                     borderRadius: "90%",
-                    border: "1px solid gold",
+                    border: "2px solid gold",
                     width: "30px",
                     height: "30px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "gold",
+                    color: "#111917",
                   }}
                 >
                   2
@@ -441,13 +441,13 @@ const HowWeOnBoard = () => {
                 <Box
                   sx={{
                     borderRadius: "90%",
-                    border: "1px solid gold",
+                    border: "2px solid gold",
                     width: "30px",
                     height: "30px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "gold",
+                    color: "#111917",
                   }}
                 >
                   3
@@ -529,13 +529,13 @@ const HowWeOnBoard = () => {
                 <Box
                   sx={{
                     borderRadius: "90%",
-                    border: "1px solid gold",
+                    border: "2px solid gold",
                     width: "30px",
                     height: "30px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "gold",
+                    color: "#111917",
                   }}
                 >
                   4
@@ -616,13 +616,13 @@ const HowWeOnBoard = () => {
                 <Box
                   sx={{
                     borderRadius: "90%",
-                    border: "1px solid gold",
+                    border: "2px solid gold",
                     width: "30px",
                     height: "30px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "gold",
+                    color: "#111917",
                   }}
                 >
                   5

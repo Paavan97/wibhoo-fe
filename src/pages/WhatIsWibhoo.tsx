@@ -345,13 +345,13 @@ const WhatIsWibhoo = () => {
               <Box
                 sx={{
                   borderRadius: "15px",
-                  border: "1px solid gold",
+                  border: "2px solid gold",
                   width: "30px",
                   height: "30px",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  color: "gold",
+                  color: "#111917",
                 }}
               >
                 1
@@ -425,13 +425,13 @@ const WhatIsWibhoo = () => {
               <Box
                 sx={{
                   borderRadius: "90%",
-                  border: "1px solid gold",
+                  border: "2px solid gold",
                   width: "30px",
                   height: "30px",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  color: "gold",
+                  color: "#111917",
                 }}
               >
                 2
@@ -502,13 +502,13 @@ const WhatIsWibhoo = () => {
               <Box
                 sx={{
                   borderRadius: "90%",
-                  border: "1px solid gold",
+                  border: "2px solid gold",
                   width: "30px",
                   height: "30px",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  color: "gold",
+                  color: "#111917",
                 }}
               >
                 3

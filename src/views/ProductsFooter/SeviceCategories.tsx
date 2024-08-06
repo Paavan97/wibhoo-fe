@@ -82,7 +82,7 @@ const ServiceCategories = () => {
             backgroundPosition: "center",
           }}
         >
-          <Card
+          <Box
             sx={{
               width: "100%",
               height: "100%",
@@ -143,7 +143,7 @@ const ServiceCategories = () => {
                 Access It
               </Button>
             </CardContent>
-          </Card>
+          </Box>
         </Box>
       ))}
     </Box>
