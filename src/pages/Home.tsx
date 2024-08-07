@@ -148,7 +148,8 @@ const Home = () => {
           Getaways, and Collaborative Networks
         </Typography>
       </Box>
-      {isCarousel ? <MobileCarousel /> : <Carousel />}
+      <Carousel />
+      {/* {isCarousel ? <MobileCarousel /> : <Carousel />} */}
       <Box
         sx={{
           marginTop: "70px",
