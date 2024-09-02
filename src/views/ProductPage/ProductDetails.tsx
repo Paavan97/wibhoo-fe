@@ -129,11 +129,7 @@ export default function ProductDetail() {
           justifyContent: "center",
         }}
       >
-        <img
-          src={Top} // Replace with the actual image path
-          alt="Above Product Grid"
-          style={{ width: "100%" }}
-        />
+        <img src={Top} alt="Above Product Grid" style={{ width: "100%" }} />
       </Box>
       <Container
         sx={{
